@@ -4,7 +4,9 @@
 }
 .nav {
     margin: 1%;
-    display: flex;
-    justify-content: center;
+    border-bottom: 1px solid black;
+    /* display: flex;
+    justify-content: center; */
         /*  ^^ Incanse I want to center  */
+
 }
