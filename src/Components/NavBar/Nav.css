@@ -1,12 +1,9 @@
 .nav-item {
     /* border: 1px solid black; */
     border-bottom: 1px solid black;
+    display: flex;
 }
-.nav {
+.navbar {
     margin: 1%;
-    border-bottom: 1px solid black;
-    /* display: flex;
-    justify-content: center; */
-        /*  ^^ Incanse I want to center  */
-
+    display: flex;
 }

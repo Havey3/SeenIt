@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./seenit.css"
 
 export default class SeenIt extends Component {
     render() {

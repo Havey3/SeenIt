@@ -21,7 +21,12 @@ export default class ApplicationViews extends Component {
                 <Route exact path="/callback" component={Callback} />
 
                 <Route exact path="/" render={(props) => {
-                    return <SeenIt SeenIt={this.state.SeenIt} />
+                    if (Auth0Client.isAuthenticated()) {
+                        return <SeenIt SeenIt={this.state.SeenIt} />
+                    } else {
+                        Auth0Client.signIn();
+                        return null;
+                    }
                 }} />
 
                 <Route
@@ -48,8 +53,6 @@ export default class ApplicationViews extends Component {
                         }
                     }}
                 />
-
-
             </div>
         )
     }

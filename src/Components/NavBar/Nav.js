@@ -10,29 +10,6 @@ class NavBar extends Component {
         sessionStorage.clear()
         this.props.history.replace("/");
     };
-    // render() {
-    //     return (
-    //         <React.Fragment>
-    //             <ul className="nav">
-    //                 <li className="nav-item">
-    //                     <Link className="nav-link" to="/">
-    //                         SeenIt
-    //                 </Link>
-    //                 </li>
-    //                 <li className="nav-item">
-    //                     <Link className="nav-link" to="/SeenIt-All">
-    //                         SeenIt-All
-    //                 </Link>
-    //                 </li>
-    //                 <li className="nav-item">
-    //                     <Link className="nav-link" to="/SeeIt">
-    //                         SeeIt
-    //                 </Link>
-    //                 </li>
-    //             </ul>
-    //         </React.Fragment>
-    //     )
-    // }
     render() {
         return (
             <nav className="navbar">
@@ -52,25 +29,26 @@ class NavBar extends Component {
                             SeeIt
                     </Link>
                     </li>
-                </ul>
-                {!auth0Client.isAuthenticated() ? (
-                    <button className="btn btn-success" onClick={auth0Client.signIn}>
+                    <li className="nav-item">
+                    {!auth0Client.isAuthenticated() ? (
+                    <Link className="nav-link" onClick={auth0Client.signIn}>
                         Sign In
-              </button>
+              </Link>
                 ) : (
-                        <React.Fragment>
-                            <div>
-                                <button
-                                    className="btn btn-danger"
+
+                    <Link className="nav-link"
                                     onClick={() => {
                                         this.signOut();
                                     }}
                                 >
                                     Sign Out
-                  </button>
-                            </div>
-                        </React.Fragment>
+                  </Link>
+
+
                     )}
+
+                    </li>
+                </ul>
             </nav>
         );
     }
