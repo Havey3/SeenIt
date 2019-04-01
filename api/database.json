@@ -11,6 +11,52 @@
       "id": 2
     }
   ],
-  "movies": [],
+  "movies": [
+    {
+      "title": "The GodFather",
+      "director": "Francis Ford Coppola",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41ew-zMJIpL._SY445_.jpg",
+      "notes": "asdasd",
+      "rank": "5",
+      "userId": "2",
+      "id": 4
+    },
+    {
+      "title": "Whiplash",
+      "director": "Damien Chazelle",
+      "image": "https://i.pinimg.com/originals/40/a5/cd/40a5cd63ff456602357c1ac2e7750f38.png",
+      "notes": "Amazing",
+      "rank": "5",
+      "userId": "2",
+      "id": 5
+    },
+    {
+      "title": "The Ritual",
+      "director": "David Bruckner",
+      "image": "https://cdna.artstation.com/p/assets/images/images/009/363/296/large/david-romero-the-ritual.jpg?1518553264",
+      "notes": "Amazing",
+      "rank": "5",
+      "userId": "2",
+      "id": 6
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51zUbui%2BgbL._SY445_.jpg",
+      "notes": "Amazinnngggg",
+      "rank": "5",
+      "userId": "2",
+      "id": 7
+    },
+    {
+      "title": "The Godfather 2",
+      "director": "Francis Ford Coppola",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41V2AB34KCL._SY445_.jpg",
+      "notes": "4",
+      "rank": "5",
+      "userId": "2",
+      "id": 8
+    }
+  ],
   "genre": []
 }

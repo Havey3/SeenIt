@@ -3,16 +3,34 @@ import React, { Component } from "react"
 import Auth0Client from "./Auth/Auth"
 import Callback from "./Auth/Callback"
 import SeenIt from "./seenIt/seenit"
-import SeeIt from "./seeIt/seeit"
 import SeenItAll from "./seenIt-all/seenit-all"
+import apiManager from "../Modules/apiManager"
+import SeeIt from "./seeIt/seeit"
+import SeeItForm from "./seeIt/seeitbuilder"
+import SeeItDetails from "./seeIt/details"
 
 export default class ApplicationViews extends Component {
     state = {
-        seenIt: [],
-        seeIt: [],
-        seenItAll: [],
-        users: []
+        movies: []
     }
+
+    addMovie = (movieObject) => {
+        return apiManager.postMovie(movieObject)
+            .then(() => apiManager.getAll())
+            .then((movies) =>
+            this.setState({ movies: movies }));
+    }
+
+    componentDidMount() {
+        const newState = {};
+        apiManager.getAll().then((movies) => {
+            newState.movies = movies;
+            this.setState(newState)
+        })
+    }
+
+
+
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
     render() {
@@ -22,7 +40,7 @@ export default class ApplicationViews extends Component {
 
                 <Route exact path="/" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
-                        return <SeenIt SeenIt={this.state.SeenIt} />
+                        return <SeenIt {...props} movies={this.state.movies} />
                     } else {
                         Auth0Client.signIn();
                         return null;
@@ -31,14 +49,42 @@ export default class ApplicationViews extends Component {
 
                 <Route
                     exact
-                    path="/SeeIt"
-                    render={props => {
+                    path="/seeIt"
+                    render={(props) => {
                         if (Auth0Client.isAuthenticated()) {
-                            return <SeeIt {...props} seeIt={this.state.SeeIt} />;
+                            return (
+                                <SeeIt
+                                    {...props}
+                                    addMovie={this.addMovie}
+                                    movies={this.state.movies}
+                                />);
                         } else {
                             Auth0Client.signIn();
                             return null;
                         }
+                    }}
+                />
+                 <Route
+                    exact
+                    path="/seeIt/:detialId(\d+)"
+                    render={(props) => {
+                        if (Auth0Client.isAuthenticated()) {
+                            return (
+                                <SeeItDetails
+                                    {...props}
+                                    movies={this.state.movies}
+                                />);
+                        } else {
+                            Auth0Client.signIn();
+                            return null;
+                        }
+                    }}
+                />
+                <Route
+                    exact
+                    path="/seeIt/new"
+                    render={(props) => {
+                        return <SeeItForm {...props} addMovie={this.addMovie} movies={this.state.movies} />;
                     }}
                 />
                 <Route

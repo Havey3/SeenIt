@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom"
-import "./seeit.css"
-export default class SeeIt extends Component {
-    render() {
+
+export default class SeeItDetails extends Component {
+    render () {
+        const movie = this.props.movies.find(movie=>movie.id === parseInt(this.props.match.params.movieId)) || {}
+        console.log(movie)
+
         return (
             <React.Fragment>
                 <div className="seeIt-Container">
-                    <button type="button" className="size1button"
-                        onClick={() => {
-                            this.props.history.push("/seeit/new");
-                        }}>Add Movie</button>
-
                 <section className="seeIt">
                     {this.props.movies.map(movie => (
-                        <div className="card">
+                        <div key = {movie.id} className="card">
                         <img src = {movie.image} className="card-img-top" alt="..."></img>
                         <div className="card-body">
                           <p className="card-text">{movie.title}</p>
                           <p className="card-text">{movie.director}</p>
-                          <Link className="nav-link" to={`/movies/${movie.id}`}>Details</Link>
+                          <p className="card-text">{movie.notes}</p>
+                          <p className="card-text">{movie.rank}</p>
                         </div>
                       </div>
-
-
                     ))}
                 </section>
                 </div>
