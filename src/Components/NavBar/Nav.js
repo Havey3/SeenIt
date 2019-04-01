@@ -1,13 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./Nav.css"
+import { Link, withRouter } from "react-router-dom";
+import auth0Client from "../Auth/Auth"
 
-export default class NavBar extends Component {
+class NavBar extends Component {
+    signOut = () => {
+        auth0Client.signOut();
+        sessionStorage.clear()
+        this.props.history.replace("/");
+    };
     render() {
         return (
-            <React.Fragment>
-                <ul className="nav">
+            <nav className="navbar">
+                <ul className="nav nav-pills">
                     <li className="nav-item">
                         <Link className="nav-link" to="/">
                             SeenIt
@@ -23,8 +29,34 @@ export default class NavBar extends Component {
                             SeeIt
                     </Link>
                     </li>
+                    <li className="nav-item">
+                    {!auth0Client.isAuthenticated() ? (
+                    <Link className="nav-link" onClick={auth0Client.signIn}>
+                        Sign In
+              </Link>
+                ) : (
+
+                    <Link className="nav-link"
+                                    onClick={() => {
+                                        this.signOut();
+                                    }}
+                                >
+                                    Sign Out
+                  </Link>
+
+
+                    )}
+
+                    </li>
                 </ul>
-            </React.Fragment>
-        )
+            </nav>
+        );
     }
 }
+
+export default withRouter(NavBar);
+
+// If you want to display user name
+// <label className="mr-2 text-blue">
+// {auth0Client.getProfile().name}
+// </label>

@@ -1,11 +1,16 @@
 {
-    "users": [
-
-    ],
-    "movies": [
-
-    ],
-    "genre": [
-        
-    ]
+  "users": [
+    {
+      "aud": "auth0|5c9e31a9587afe10304e4a4f",
+      "name": "test",
+      "id": 1
+    },
+    {
+      "aud": "auth0|5c9e33e43afc441036672e07",
+      "name": "josh",
+      "id": 2
+    }
+  ],
+  "movies": [],
+  "genre": []
 }
