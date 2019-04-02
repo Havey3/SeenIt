@@ -37,3 +37,34 @@
 .details-link {
     color: #080F5B
 }
+.seeitform {
+    border: 1px solid black;
+    margin: 1%;
+    width: 50rem;
+    display: flex;
+    flex-direction:column;
+    align-content: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+    justify-self: center !important;
+    justify-items: center !important;
+}
+.container-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-control {
+    display: flex;
+    align-items: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    background-color: #644e5b;
+}
