@@ -9,8 +9,108 @@
       "aud": "auth0|5c9e33e43afc441036672e07",
       "name": "josh",
       "id": 2
+    },
+    {
+      "aud": "auth0|5ca3750b839d9f109ad0d100",
+      "name": "d",
+      "id": 3
     }
   ],
-  "movies": [],
+  "movies": [
+    {
+      "id": 4,
+      "title": "The GodFather",
+      "director": "Francis Ford Coppola",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41ew-zMJIpL._SY445_.jpg",
+      "notes": "asdasd",
+      "rank": "5",
+      "userId": "2"
+    },
+    {
+      "id": 5,
+      "title": "Whiplash",
+      "director": "Damien Chazelle",
+      "image": "https://i.pinimg.com/originals/40/a5/cd/40a5cd63ff456602357c1ac2e7750f38.png",
+      "notes": "Very amazing",
+      "rank": "5"
+    },
+    {
+      "id": 6,
+      "title": "The Ritual",
+      "director": "David Bruckner",
+      "image": "https://cdna.artstation.com/p/assets/images/images/009/363/296/large/david-romero-the-ritual.jpg?1518553264",
+      "notes": "Amazing",
+      "rank": "5"
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51zUbui%2BgbL._SY445_.jpg",
+      "notes": "Amazinnngggg",
+      "rank": "5",
+      "userId": "2",
+      "id": 7
+    },
+    {
+      "id": 9,
+      "title": "Hereditary",
+      "director": "Ari Aster",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
+      "notes": "Very Very Scary",
+      "rank": "5"
+    },
+    {
+      "id": 10,
+      "title": "The Conjuring",
+      "director": "James Wan",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Conjuring_poster.jpg/220px-Conjuring_poster.jpg",
+      "notes": "Pretty Scary",
+      "rank": ""
+    },
+    {
+      "id": 11,
+      "title": "Hereditary",
+      "director": "Ari Aster",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
+      "notes": "Very scary",
+      "rank": "5"
+    },
+    {
+      "id": 12,
+      "title": "The Ritual",
+      "director": "David Bruckner",
+      "image": "https://i.pinimg.com/originals/ed/9a/82/ed9a823ac6cc69d00498c40f065179fb.jpg",
+      "notes": "Very very nice",
+      "rank": "5",
+      "userId": "2"
+    },
+    {
+      "title": "Hereditary",
+      "director": "Ari Aster",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
+      "notes": "Very scary",
+      "rank": "5",
+      "userId": "3",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "title": "The conjuring",
+      "director": "James Wan",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51XZ4OitzbL.jpg",
+      "notes": "Very nice",
+      "rank": "3",
+      "userId": "3"
+    },
+    {
+      "title": "Fun with Dick and Jane",
+      "director": "Dean Parisot",
+      "image": "https://cdn.shopify.com/s/files/1/0799/0083/products/Theodor_FunWith_CoverAr_3000DPI300RGB1000154896_grande.jpg?v=1472517421",
+      "notes": "Very funny",
+      "rank": "3",
+      "userId": "3",
+      "id": 15
+    }
+  ],
   "genre": []
 }

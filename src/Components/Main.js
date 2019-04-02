@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom';
 import ApplicationViews from "./ApplicationViews"
 import "./Main.css"
 import "bootstrap/dist/css/bootstrap.min.css"
+// import 'materialize-css/dist/css/materialize.min.css';
 
 class Main extends Component {
     async componentDidMount() {
@@ -19,8 +20,10 @@ class Main extends Component {
     render() {
         return (
             <React.Fragment>
+            <div className="container-div">
                 <NavBar />
                 <ApplicationViews />
+                </div>
             </React.Fragment>
         )
     }
