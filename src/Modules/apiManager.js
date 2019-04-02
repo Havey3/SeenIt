@@ -18,5 +18,17 @@ export default {
         })
         .then(() => fetch(`${movieHost}/movies`))
         .then(e => e.json());
+    },
+    editMovie(movie) {
+        return fetch (`${movieHost}/movies/${movie.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(movie)
+        }).then(e=>e.json())
+    },
+    singleMovie: id => {
+        return fetch(`${movieHost}/movies/${id}`).then(e=>e.json())
     }
 }

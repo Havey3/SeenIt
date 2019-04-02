@@ -64,7 +64,10 @@
     justify-content: center;
     align-items: center;
 }
-
 #root {
     background-color: #644e5b;
+}
+.detial-buttons {
+    display: flex;
+    flex-direction: row;
 }

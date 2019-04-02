@@ -8,6 +8,7 @@ import apiManager from "../Modules/apiManager"
 import SeeIt from "./seeIt/seeit"
 import SeeItForm from "./seeIt/seeitbuilder"
 import SeeItDetails from "./seeIt/details"
+import MovieEditForm from "./seeIt/MovieEditForm"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -18,13 +19,22 @@ export default class ApplicationViews extends Component {
         return apiManager.postMovie(movieObject)
             .then(() => apiManager.getAll())
             .then((movies) =>
-            this.setState({ movies: movies }));
+                this.setState({ movies: movies }));
     }
     deleteMovie = id => {
         return apiManager.deleteMovie(id).then(movies =>
             this.setState({
-                movies:movies
+                movies: movies
             }))
+    }
+    editMovie = editObject => {
+        return apiManager.editMovie(editObject)
+            .then(() => apiManager.getAll())
+            .then(movies => {
+                this.setState({
+                    movies: movies
+                })
+            })
     }
 
     componentDidMount() {
@@ -70,7 +80,8 @@ export default class ApplicationViews extends Component {
                         }
                     }}
                 />
-                 <Route
+                <Route
+                    exact
                     path="/movies/:movieId(\d+)"
                     render={(props) => {
                         if (Auth0Client.isAuthenticated()) {
@@ -84,6 +95,18 @@ export default class ApplicationViews extends Component {
                             Auth0Client.signIn();
                             return null;
                         }
+                    }}
+                />
+                <Route
+                    path="/movies/:movieId(\d+)/edit"
+                    render={props => {
+                        return (
+                            <MovieEditForm
+                                {...props}
+                                movies={this.state.movies}
+                                editMovie={this.editMovie}
+                            />
+                        );
                     }}
                 />
                 <Route

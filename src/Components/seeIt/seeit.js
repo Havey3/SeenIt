@@ -13,18 +13,20 @@ export default class SeeIt extends Component {
 
 
                     <section className="seeIt">
-                        {this.props.movies.map(movie => (
-                            <div key={movie.id} className="card">
-                                <img src={movie.image} className="card-img-top" alt="..."></img>
-                                <div className="card-body">
-                                    <p className="card-text">{movie.title}</p>
-                                    <p className="card-text">{movie.director}</p>
-                                    <Link className="details-link" to={`/movies/${movie.id}`}>Details</Link>
+                        {this.props.movies.map(movie => {
+                            if (movie.userId === sessionStorage.getItem('credentials')){
+                                return <div key={movie.id} className="card">
+                                    <img src={movie.image} className="card-img-top" alt="..."></img>
+                                    <div className="card-body">
+                                        <p className="card-text">{movie.title}</p>
+                                        <p className="card-text">{movie.director}</p>
+                                        <Link className="details-link" to={`/movies/${movie.id}`}>Details</Link>
+                                    </div>
                                 </div>
-                            </div>
+                            }
 
 
-                        ))}
+                        })}
                     </section>
                 </div>
             </React.Fragment>
