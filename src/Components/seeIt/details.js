@@ -17,6 +17,10 @@ export default class SeeItDetails extends Component {
                           <p className="card-text">{movie.director}</p>
                           <p className="card-text">{movie.notes}</p>
                           <p className="card-text">{movie.rank}</p>
+                          <a href="#"
+                            onClick={() => this.props.deleteMovie(movie.id)
+                                            .then(() => this.props.history.push("/seeit"))}
+                            className="card-link">Delete</a>
                         </div>
                       </div>
                 </section>

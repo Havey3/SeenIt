@@ -20,6 +20,12 @@ export default class ApplicationViews extends Component {
             .then((movies) =>
             this.setState({ movies: movies }));
     }
+    deleteMovie = id => {
+        return apiManager.deleteMovie(id).then(movies =>
+            this.setState({
+                movies:movies
+            }))
+    }
 
     componentDidMount() {
         const newState = {};
@@ -72,6 +78,7 @@ export default class ApplicationViews extends Component {
                                 <SeeItDetails
                                     {...props}
                                     movies={this.state.movies}
+                                    deleteMovie={this.deleteMovie}
                                 />);
                         } else {
                             Auth0Client.signIn();

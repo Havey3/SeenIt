@@ -11,5 +11,12 @@ export default {
             },
             body: JSON.stringify(newMovie)
         }).then(data => data.json())
+    },
+    deleteMovie: id => {
+        return fetch(`${movieHost}/movies/${id}`, {
+            method: "DELETE"
+        })
+        .then(() => fetch(`${movieHost}/movies`))
+        .then(e => e.json());
     }
 }
