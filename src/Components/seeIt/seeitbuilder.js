@@ -9,6 +9,7 @@ export default class SeeItForm extends Component {
         movieImg: '',
         movieNotes: '',
         movieRank: '',
+        seenIt: '',
         userId: ''
     }
 
@@ -29,6 +30,7 @@ export default class SeeItForm extends Component {
             image: this.state.movieImg,
             notes: this.state.movieNotes,
             rank: this.state.movieRank,
+            seenIt: false,
             userId: sessionStorage.getItem('credentials')
         }
         // directs user back to 'seeIt page'/loads movies

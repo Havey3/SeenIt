@@ -9,6 +9,8 @@ import SeeIt from "./seeIt/seeit"
 import SeeItForm from "./seeIt/seeitbuilder"
 import SeeItDetails from "./seeIt/details"
 import MovieEditForm from "./seeIt/MovieEditForm"
+import TestComponent from "../testComponent";
+import Test from "../testComponent";
 
 export default class ApplicationViews extends Component {
     state = {
@@ -36,6 +38,15 @@ export default class ApplicationViews extends Component {
                 })
             })
     }
+    seenIt = (movieId, movieObject) => {
+        return apiManager.changeMovie(movieObject, movieId)
+        .then(() => apiManager.getAll())
+        .then((movies) => {
+            this.setState({
+                movies: movies
+            })
+        } )
+    }
 
     componentDidMount() {
         const newState = {};
@@ -58,8 +69,7 @@ export default class ApplicationViews extends Component {
                     if (Auth0Client.isAuthenticated()) {
                         return <SeenIt {...props} movies={this.state.movies} />
                     } else {
-                        Auth0Client.signIn();
-                        return null;
+                        return <TestComponent />
                     }
                 }} />
 
@@ -73,6 +83,7 @@ export default class ApplicationViews extends Component {
                                     {...props}
                                     addMovie={this.addMovie}
                                     movies={this.state.movies}
+                                    seenIt={this.seenIt}
                                 />);
                         } else {
                             Auth0Client.signIn();

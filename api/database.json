@@ -24,48 +24,18 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/41ew-zMJIpL._SY445_.jpg",
       "notes": "asdasd",
       "rank": "5",
+      "seenIt": true,
       "userId": "2"
     },
     {
-      "id": 5,
-      "title": "Whiplash",
-      "director": "Damien Chazelle",
-      "image": "https://i.pinimg.com/originals/40/a5/cd/40a5cd63ff456602357c1ac2e7750f38.png",
-      "notes": "Very amazing",
-      "rank": "5"
-    },
-    {
-      "id": 6,
-      "title": "The Ritual",
-      "director": "David Bruckner",
-      "image": "https://cdna.artstation.com/p/assets/images/images/009/363/296/large/david-romero-the-ritual.jpg?1518553264",
-      "notes": "Amazing",
-      "rank": "5"
-    },
-    {
+      "id": 7,
       "title": "The Shawshank Redemption",
       "director": "Frank Darabont",
       "image": "https://images-na.ssl-images-amazon.com/images/I/51zUbui%2BgbL._SY445_.jpg",
-      "notes": "Amazinnngggg",
+      "notes": "Very good",
       "rank": "5",
-      "userId": "2",
-      "id": 7
-    },
-    {
-      "id": 9,
-      "title": "Hereditary",
-      "director": "Ari Aster",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
-      "notes": "Very Very Scary",
-      "rank": "5"
-    },
-    {
-      "id": 10,
-      "title": "The Conjuring",
-      "director": "James Wan",
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Conjuring_poster.jpg/220px-Conjuring_poster.jpg",
-      "notes": "Pretty Scary",
-      "rank": ""
+      "seenIt": true,
+      "userId": "2"
     },
     {
       "id": 11,
@@ -73,7 +43,8 @@
       "director": "Ari Aster",
       "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
       "notes": "Very scary",
-      "rank": "5"
+      "rank": "5",
+      "seenIt": false
     },
     {
       "id": 12,
@@ -82,6 +53,7 @@
       "image": "https://i.pinimg.com/originals/ed/9a/82/ed9a823ac6cc69d00498c40f065179fb.jpg",
       "notes": "Very very nice",
       "rank": "5",
+      "seenIt": true,
       "userId": "2"
     },
     {
@@ -90,6 +62,7 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
       "notes": "Very scary",
       "rank": "5",
+      "seenIt": false,
       "userId": "3",
       "id": 13
     },
@@ -100,16 +73,38 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/51XZ4OitzbL.jpg",
       "notes": "Very nice",
       "rank": "3",
+      "seenIt": true,
       "userId": "3"
     },
     {
-      "title": "Fun with Dick and Jane",
-      "director": "Dean Parisot",
-      "image": "https://cdn.shopify.com/s/files/1/0799/0083/products/Theodor_FunWith_CoverAr_3000DPI300RGB1000154896_grande.jpg?v=1472517421",
-      "notes": "Very funny",
-      "rank": "3",
+      "title": "The Godfather",
+      "director": "Francis Ford Coppola",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/418vBoKURIL.jpg",
+      "notes": "",
+      "rank": "",
+      "seenIt": false,
       "userId": "3",
-      "id": 15
+      "id": 16
+    },
+    {
+      "title": "The Godfather 2",
+      "director": "Francis Ford Coppola",
+      "image": "https://i.pinimg.com/originals/ea/29/0d/ea290d22010032b85a762c5267c2f735.jpg",
+      "notes": "",
+      "rank": "",
+      "seenIt": true,
+      "userId": "2",
+      "id": 17
+    },
+    {
+      "title": "Us",
+      "director": "Jordan Peele",
+      "image": "http://cdn.collider.com/wp-content/uploads/2018/12/us-movie-poster-384x600.jpg",
+      "notes": "",
+      "rank": "",
+      "seenIt": true,
+      "userId": "2",
+      "id": 18
     }
   ],
   "genre": []

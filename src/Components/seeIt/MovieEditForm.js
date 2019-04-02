@@ -10,6 +10,7 @@ export default class MovieEditForm extends Component {
         movieImg: '',
         movieNotes: '',
         movieRank: '',
+        seenIt: '',
         userId: ''
     }
 
@@ -31,6 +32,7 @@ export default class MovieEditForm extends Component {
             image: this.state.movieImg,
             notes: this.state.movieNotes,
             rank: this.state.movieRank,
+            seenIt: '',
             userId: sessionStorage.getItem('credentials')
         }
         // directs user back to 'seeIt page'/loads movies
@@ -45,7 +47,9 @@ export default class MovieEditForm extends Component {
                 movieDirector: movie.director,
                 movieImg: movie.image,
                 movieNotes: movie.notes,
-                movieRank: movie.rank
+                movieRank: movie.rank,
+                seenIt: false,
+                id: this.props.match.params.movieId
             })
         })
     }

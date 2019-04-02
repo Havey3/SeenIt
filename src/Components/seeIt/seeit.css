@@ -71,3 +71,10 @@
     display: flex;
     flex-direction: row;
 }
+.seeit-buttons {
+    display: flex;
+}
+.seenit-btn-attempt {
+    display: flex;
+    flex-direction: column;
+}

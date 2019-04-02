@@ -14,18 +14,31 @@ export default class SeeIt extends Component {
 
                     <section className="seeIt">
                         {this.props.movies.map(movie => {
-                            if (movie.userId === sessionStorage.getItem('credentials')){
+                            if (movie.seenIt === false && movie.userId === sessionStorage.getItem('credentials')) {
                                 return <div key={movie.id} className="card">
                                     <img src={movie.image} className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <p className="card-text">{movie.title}</p>
                                         <p className="card-text">{movie.director}</p>
-                                        <Link className="details-link" to={`/movies/${movie.id}`}>Details</Link>
+                                        <div className="seenit-btn-attempt">
+
+                                            {/* <button
+                                                type="submit"
+                                                onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
+                                                className="btn-small btn-attempt"
+                                            >
+                                                Watched?
+
+          </button> */}
+                                            {<Link className="details-link" onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
+                                            >SeenIt?</Link>}
+                                            <Link className="details-link link-attempt" to={`/movies/${movie.id}`}>Details</Link>
+                                            {/* <Link className="details-link" onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
+                                           >Watched?</Link> */}
+                                        </div>
                                     </div>
                                 </div>
                             }
-
-
                         })}
                     </section>
                 </div>
