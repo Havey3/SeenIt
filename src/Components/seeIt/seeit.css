@@ -1,5 +1,6 @@
 .card {
     width: 18rem !important;
+    background-color: #644e5b
 }
 .seeIt-Container {
     margin: 1.5rem;
@@ -17,4 +18,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #97aabd;
+}
+.fa-plus-circle{
+    font-size: 3rem;
+    widows: 20px;;
+    color: #080F5B;
+    display: flex;
+    justify-content: center;
+}
+.fa-plus-circle:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+:root, .container-div{
+    background-color: #644e5b;
+}
+.details-link {
+    color: #080F5B
 }

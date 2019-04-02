@@ -5,6 +5,7 @@
   "dependencies": {
     "auth0-js": "^9.10.1",
     "bootstrap": "^4.3.1",
+    "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0",

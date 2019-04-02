@@ -20,9 +20,6 @@ class NavBar extends Component {
                     </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/SeenIt-All">
-                            SeenIt-All
-                    </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/SeeIt">

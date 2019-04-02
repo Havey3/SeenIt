@@ -65,8 +65,7 @@ export default class ApplicationViews extends Component {
                     }}
                 />
                  <Route
-                    exact
-                    path="/seeIt/:detialId(\d+)"
+                    path="/movies/:movieId(\d+)"
                     render={(props) => {
                         if (Auth0Client.isAuthenticated()) {
                             return (
