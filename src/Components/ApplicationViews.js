@@ -8,8 +8,9 @@ import apiManager from "../Modules/apiManager"
 import SeeIt from "./seeIt/seeit"
 import SeeItForm from "./seeIt/seeitbuilder"
 import SeeItDetails from "./seeIt/details"
-import MovieEditForm from "./seeIt/MovieEditForm"
+import SeeItEdit from "./seeIt/MovieEditForm"
 import Home from "./Home/Home"
+import SeenItDetails from "./seenIt/SeenItDetails"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -66,7 +67,6 @@ export default class ApplicationViews extends Component {
 
 
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
-    notAuthenticated = () => sessionStorage.getItem("credentials") === null
 
     render() {
         return (
@@ -77,7 +77,7 @@ export default class ApplicationViews extends Component {
                             <Callback {...props} runOnLogin={this.runOnLogin} />
                         )
                     }} />
-                    
+
                 <Route exact path="/" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
                         return <SeenIt {...props} movies={this.state.movies} />
@@ -120,10 +120,25 @@ export default class ApplicationViews extends Component {
                     }}
                 />
                 <Route
+                    exact
+                    path="/seenitdetails/:movieId(\d+)"
+                    render={(props) => {
+                        if (Auth0Client.isAuthenticated()) {
+                            return (
+                                <SeenItDetails
+                                    {...props}
+                                    movies={this.state.movies}
+                                />);
+                        } else {
+                            return <Home />
+                        }
+                    }}
+                />
+                <Route
                     path="/movies/:movieId(\d+)/edit"
                     render={props => {
                         return (
-                            <MovieEditForm
+                            <SeeItEdit
                                 {...props}
                                 movies={this.state.movies}
                                 editMovie={this.editMovie}

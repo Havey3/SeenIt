@@ -32,26 +32,17 @@
       "title": "The Shawshank Redemption",
       "director": "Frank Darabont",
       "image": "https://images-na.ssl-images-amazon.com/images/I/51zUbui%2BgbL._SY445_.jpg",
-      "notes": "Very good",
+      "notes": "Very goodasdad",
       "rank": "5",
-      "seenIt": true,
+      "seenIt": "",
       "userId": "2"
-    },
-    {
-      "id": 11,
-      "title": "Hereditary",
-      "director": "Ari Aster",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/7158Jkv2RPL._SY606_.jpg",
-      "notes": "Very scary",
-      "rank": "5",
-      "seenIt": false
     },
     {
       "id": 12,
       "title": "The Ritual",
       "director": "David Bruckner",
       "image": "https://i.pinimg.com/originals/ed/9a/82/ed9a823ac6cc69d00498c40f065179fb.jpg",
-      "notes": "Very very nice",
+      "notes": "Very very niceasdasdad",
       "rank": "5",
       "seenIt": true,
       "userId": "2"
@@ -107,14 +98,24 @@
       "id": 18
     },
     {
+      "id": 19,
       "title": "Ex Machina",
       "director": "Alex Garland",
       "image": "https://images-na.ssl-images-amazon.com/images/I/41K-B%2BP%2B9BL.jpg",
-      "notes": "AMAZING",
+      "notes": "Very nice",
       "rank": "5",
-      "seenIt": false,
-      "userId": "2",
-      "id": 19
+      "seenIt": "",
+      "userId": "2"
+    },
+    {
+      "id": 20,
+      "title": "Ex Machina",
+      "director": "Alex Garland",
+      "image": "https://i.pinimg.com/originals/40/cc/d3/40ccd3b570817e9b2f8e0230d4c7b6d6.png",
+      "notes": "Very nice",
+      "rank": "5",
+      "seenIt": true,
+      "userId": "2"
     }
   ],
   "genre": []

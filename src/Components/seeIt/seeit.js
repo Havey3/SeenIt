@@ -33,8 +33,6 @@ export default class SeeIt extends Component {
                                             {<Link className="details-link" onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
                                             >SeenIt?</Link>}
                                             <Link className="details-link link-attempt" to={`/movies/${movie.id}`}>Details</Link>
-                                            {/* <Link className="details-link" onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
-                                           >Watched?</Link> */}
                                         </div>
                                     </div>
                                 </div>
@@ -46,3 +44,5 @@ export default class SeeIt extends Component {
         )
     }
 }
+
+// onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}

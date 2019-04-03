@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./seeit.css"
 import apiManager from '../../Modules/apiManager';
 
-export default class MovieEditForm extends Component {
+export default class SeeItEdit extends Component {
     // Set State
     state = {
         movieTitle: '',
@@ -32,7 +32,7 @@ export default class MovieEditForm extends Component {
             image: this.state.movieImg,
             notes: this.state.movieNotes,
             rank: this.state.movieRank,
-            seenIt: '',
+            seenIt: false,
             userId: sessionStorage.getItem('credentials')
         }
         // directs user back to 'seeIt page'/loads movies
