@@ -105,6 +105,16 @@
       "seenIt": true,
       "userId": "2",
       "id": 18
+    },
+    {
+      "title": "Ex Machina",
+      "director": "Alex Garland",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41K-B%2BP%2B9BL.jpg",
+      "notes": "AMAZING",
+      "rank": "5",
+      "seenIt": false,
+      "userId": "2",
+      "id": 19
     }
   ],
   "genre": []

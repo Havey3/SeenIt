@@ -9,8 +9,7 @@ import SeeIt from "./seeIt/seeit"
 import SeeItForm from "./seeIt/seeitbuilder"
 import SeeItDetails from "./seeIt/details"
 import MovieEditForm from "./seeIt/MovieEditForm"
-import TestComponent from "../testComponent";
-import Test from "../testComponent";
+import Home from "./Home/Home"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -40,12 +39,20 @@ export default class ApplicationViews extends Component {
     }
     seenIt = (movieId, movieObject) => {
         return apiManager.changeMovie(movieObject, movieId)
-        .then(() => apiManager.getAll())
-        .then((movies) => {
-            this.setState({
-                movies: movies
+            .then(() => apiManager.getAll())
+            .then((movies) => {
+                this.setState({
+                    movies: movies
+                })
             })
-        } )
+    }
+
+    runOnLogin = () => {
+        const newState = {};
+        apiManager.getAll().then((movies) => {
+            newState.movies = movies;
+            this.setState(newState)
+        })
     }
 
     componentDidMount() {
@@ -59,17 +66,23 @@ export default class ApplicationViews extends Component {
 
 
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
+    notAuthenticated = () => sessionStorage.getItem("credentials") === null
 
     render() {
         return (
             <div className="container-div">
-                <Route exact path="/callback" component={Callback} />
-
+                <Route exact path="/callback"
+                    render={(props) => {
+                        return (
+                            <Callback {...props} runOnLogin={this.runOnLogin} />
+                        )
+                    }} />
+                    
                 <Route exact path="/" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
                         return <SeenIt {...props} movies={this.state.movies} />
                     } else {
-                        return <TestComponent />
+                        return <Home />
                     }
                 }} />
 
@@ -86,8 +99,7 @@ export default class ApplicationViews extends Component {
                                     seenIt={this.seenIt}
                                 />);
                         } else {
-                            Auth0Client.signIn();
-                            return null;
+                            return <Home />
                         }
                     }}
                 />
@@ -103,8 +115,7 @@ export default class ApplicationViews extends Component {
                                     deleteMovie={this.deleteMovie}
                                 />);
                         } else {
-                            Auth0Client.signIn();
-                            return null;
+                            return <Home />
                         }
                     }}
                 />
@@ -134,8 +145,7 @@ export default class ApplicationViews extends Component {
                         if (Auth0Client.isAuthenticated()) {
                             return <SeenItAll {...props} seenItAll={this.state.seenItAll} />;
                         } else {
-                            Auth0Client.signIn();
-                            return null;
+                            return <Home />
                         }
                     }}
                 />

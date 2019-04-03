@@ -12,3 +12,10 @@
     color: #97AABD;
     font-family: 'Merriweather', serif;
 }
+.login-attempt {
+    display: flex;
+    justify-content: center;
+    color: #97AABD;
+    font-family: 'Merriweather', serif;
+    text-decoration: none !important;
+}

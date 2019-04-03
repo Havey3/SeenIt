@@ -26,6 +26,7 @@
     color: #080F5B;
     display: flex;
     justify-content: center;
+    padding-bottom: 1%;
 }
 .fa-plus-circle:hover {
     opacity: 0.5;
