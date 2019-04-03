@@ -19,7 +19,7 @@ export default class SeenItDetails extends Component {
                           <div className="detial-buttons">
                             <button href="#"
                             onClick={() => {
-                                            this.props.history.push(`/movies/${movie.id}/edit`
+                                            this.props.history.push(`/seenIt/${movie.id}/edit`
                                             )
                                             }}
                             >Edit</button>

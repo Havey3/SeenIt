@@ -12,6 +12,7 @@ import SeeItEdit from "./seeIt/MovieEditForm"
 import Home from "./Home/Home"
 import SeenItDetails from "./seenIt/SeenItDetails"
 import SeenitRank from "./seenIt/seenitrank"
+import SeenItEdit from "./seenIt/SeenItEdit"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -163,6 +164,20 @@ export default class ApplicationViews extends Component {
                         );
                     }}
                 />
+                {/* asdasd */}
+                <Route
+                    path="/seenIt/:movieId(\d+)/edit"
+                    render={props => {
+                        return (
+                            <SeenItEdit
+                                {...props}
+                                movies={this.state.movies}
+                                editMovie={this.editMovie}
+                            />
+                        );
+                    }}
+                />
+
                 <Route
                     exact
                     path="/seeIt/new"

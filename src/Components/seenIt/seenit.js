@@ -3,12 +3,14 @@ import { Link } from "react-router-dom"
 import "./seenit.css"
 export default class SeenIt extends Component {
     render() {
+        this.props.movies.sort((a, b) => b.rank - a.rank)
         return (
             <React.Fragment>
                     <section className="seeIt">
                         {this.props.movies.map(movie => {
                             if (movie.seenIt === true && movie.userId === sessionStorage.getItem('credentials')) {
-                                return <div key={movie.id} className="card">
+                                return (
+                                <div key={movie.id} className="card">
                                     <img src={movie.image} className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <p className="card-text">{movie.title}</p>
@@ -16,9 +18,8 @@ export default class SeenIt extends Component {
                                         <Link className="details-link" to={`/seenitdetails/${movie.id}`}>Details</Link>
                                     </div>
                                 </div>
+                                )
                             }
-
-
                         })}
                     </section>
             </React.Fragment>

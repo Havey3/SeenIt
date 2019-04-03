@@ -49,7 +49,7 @@ class Callback extends Component {
                         this.props.runOnLogin()
                     }
                 });
-            this.props.history.replace("/");
+            this.props.history.replace("/seeIt");
         }
 
     render() {
