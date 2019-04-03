@@ -26,6 +26,7 @@
     color: #080F5B;
     display: flex;
     justify-content: center;
+    padding-bottom: 1%;
 }
 .fa-plus-circle:hover {
     opacity: 0.5;
@@ -70,4 +71,11 @@
 .detial-buttons {
     display: flex;
     flex-direction: row;
+}
+.seeit-buttons {
+    display: flex;
+}
+.seenit-btn-attempt {
+    display: flex;
+    flex-direction: column;
 }

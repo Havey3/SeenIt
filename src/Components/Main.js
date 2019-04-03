@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 class Main extends Component {
     async componentDidMount() {
+
         if (this.props.location.pathname === '/callback') return;
         try {
             await auth0Client.silentAuth();

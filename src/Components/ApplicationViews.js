@@ -8,7 +8,10 @@ import apiManager from "../Modules/apiManager"
 import SeeIt from "./seeIt/seeit"
 import SeeItForm from "./seeIt/seeitbuilder"
 import SeeItDetails from "./seeIt/details"
-import MovieEditForm from "./seeIt/MovieEditForm"
+import SeeItEdit from "./seeIt/MovieEditForm"
+import Home from "./Home/Home"
+import SeenItDetails from "./seenIt/SeenItDetails"
+import SeenitRank from "./seenIt/seenitrank"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -36,6 +39,23 @@ export default class ApplicationViews extends Component {
                 })
             })
     }
+    seenIt = (movieId, movieObject) => {
+        return apiManager.changeMovie(movieObject, movieId)
+            .then(() => apiManager.getAll())
+            .then((movies) => {
+                this.setState({
+                    movies: movies
+                })
+            })
+    }
+
+    runOnLogin = () => {
+        const newState = {};
+        apiManager.getAll().then((movies) => {
+            newState.movies = movies;
+            this.setState(newState)
+        })
+    }
 
     componentDidMount() {
         const newState = {};
@@ -52,14 +72,18 @@ export default class ApplicationViews extends Component {
     render() {
         return (
             <div className="container-div">
-                <Route exact path="/callback" component={Callback} />
+                <Route exact path="/callback"
+                    render={(props) => {
+                        return (
+                            <Callback {...props} runOnLogin={this.runOnLogin} />
+                        )
+                    }} />
 
-                <Route exact path="/" render={(props) => {
+                <Route exact path="/seenIt" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
                         return <SeenIt {...props} movies={this.state.movies} />
                     } else {
-                        Auth0Client.signIn();
-                        return null;
+                        return <Home />
                     }
                 }} />
 
@@ -73,10 +97,10 @@ export default class ApplicationViews extends Component {
                                     {...props}
                                     addMovie={this.addMovie}
                                     movies={this.state.movies}
+                                    seenIt={this.seenIt}
                                 />);
                         } else {
-                            Auth0Client.signIn();
-                            return null;
+                            return <Home />
                         }
                     }}
                 />
@@ -92,8 +116,38 @@ export default class ApplicationViews extends Component {
                                     deleteMovie={this.deleteMovie}
                                 />);
                         } else {
-                            Auth0Client.signIn();
-                            return null;
+                            return <Home />
+                        }
+                    }}
+                />
+                <Route
+                    exact
+                    path="/moives/:movieId(\d+)/rank"
+                    render={(props) => {
+                        if (Auth0Client.isAuthenticated()) {
+                            return (
+                                <SeenitRank
+                                    {...props}
+                                    movies={this.state.movies}
+                                    editMovie={this.editMovie}
+                                />);
+                        } else {
+                            return <Home />
+                        }
+                    }}
+                />
+                <Route
+                    exact
+                    path="/seenitdetails/:movieId(\d+)"
+                    render={(props) => {
+                        if (Auth0Client.isAuthenticated()) {
+                            return (
+                                <SeenItDetails
+                                    {...props}
+                                    movies={this.state.movies}
+                                />);
+                        } else {
+                            return <Home />
                         }
                     }}
                 />
@@ -101,7 +155,7 @@ export default class ApplicationViews extends Component {
                     path="/movies/:movieId(\d+)/edit"
                     render={props => {
                         return (
-                            <MovieEditForm
+                            <SeeItEdit
                                 {...props}
                                 movies={this.state.movies}
                                 editMovie={this.editMovie}
@@ -123,8 +177,7 @@ export default class ApplicationViews extends Component {
                         if (Auth0Client.isAuthenticated()) {
                             return <SeenItAll {...props} seenItAll={this.state.seenItAll} />;
                         } else {
-                            Auth0Client.signIn();
-                            return null;
+                            return <Home />
                         }
                     }}
                 />

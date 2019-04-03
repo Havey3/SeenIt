@@ -30,5 +30,14 @@ export default {
     },
     singleMovie: id => {
         return fetch(`${movieHost}/movies/${id}`).then(e=>e.json())
-    }
+    },
+    changeMovie(id, seenIt) {
+        return fetch (`${movieHost}/movies/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(seenIt)
+        }).then(e=>e.json())
+}
 }
