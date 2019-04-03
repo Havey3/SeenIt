@@ -79,3 +79,7 @@
     display: flex;
     flex-direction: column;
 }
+.card-attempt {
+    display: flex;
+    justify-content: center;
+}

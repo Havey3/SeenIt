@@ -23,7 +23,7 @@
       "director": "Francis Ford Coppola",
       "image": "https://images-na.ssl-images-amazon.com/images/I/41ew-zMJIpL._SY445_.jpg",
       "notes": "asdasd",
-      "rank": "5",
+      "rank": "1",
       "seenIt": true,
       "userId": "2"
     },
@@ -64,7 +64,7 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/51XZ4OitzbL.jpg",
       "notes": "Very nice",
       "rank": "3",
-      "seenIt": true,
+      "seenIt": false,
       "userId": "3"
     },
     {
@@ -78,33 +78,23 @@
       "id": 16
     },
     {
+      "id": 17,
       "title": "The Godfather 2",
       "director": "Francis Ford Coppola",
-      "image": "https://i.pinimg.com/originals/ea/29/0d/ea290d22010032b85a762c5267c2f735.jpg",
+      "image": "https://i.pinimg.com/originals/f3/f1/0d/f3f10d94f6c0c0b2a344167065664530.jpg",
       "notes": "",
-      "rank": "",
+      "rank": "5",
       "seenIt": true,
-      "userId": "2",
-      "id": 17
+      "userId": "2"
     },
     {
+      "id": 18,
       "title": "Us",
       "director": "Jordan Peele",
       "image": "http://cdn.collider.com/wp-content/uploads/2018/12/us-movie-poster-384x600.jpg",
-      "notes": "",
-      "rank": "",
+      "notes": "Pretty good",
+      "rank": "3",
       "seenIt": true,
-      "userId": "2",
-      "id": 18
-    },
-    {
-      "id": 19,
-      "title": "Ex Machina",
-      "director": "Alex Garland",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41K-B%2BP%2B9BL.jpg",
-      "notes": "Very nice",
-      "rank": "5",
-      "seenIt": "",
       "userId": "2"
     },
     {
@@ -113,6 +103,16 @@
       "director": "Alex Garland",
       "image": "https://i.pinimg.com/originals/40/cc/d3/40ccd3b570817e9b2f8e0230d4c7b6d6.png",
       "notes": "Very nice",
+      "rank": "5",
+      "seenIt": false,
+      "userId": "2"
+    },
+    {
+      "id": 21,
+      "title": "Whiplash",
+      "director": "Damien Chazelle",
+      "image": "https://cdn.shopify.com/s/files/1/0747/3829/products/HP2519_3b09887d-5c1b-4398-a3ab-7203b9b29265_1024x1024.jpg?v=1515503805",
+      "notes": "Amazing movie",
       "rank": "5",
       "seenIt": true,
       "userId": "2"

@@ -11,6 +11,7 @@ import SeeItDetails from "./seeIt/details"
 import SeeItEdit from "./seeIt/MovieEditForm"
 import Home from "./Home/Home"
 import SeenItDetails from "./seenIt/SeenItDetails"
+import SeenitRank from "./seenIt/seenitrank"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -78,7 +79,7 @@ export default class ApplicationViews extends Component {
                         )
                     }} />
 
-                <Route exact path="/" render={(props) => {
+                <Route exact path="/seenIt" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
                         return <SeenIt {...props} movies={this.state.movies} />
                     } else {
@@ -113,6 +114,22 @@ export default class ApplicationViews extends Component {
                                     {...props}
                                     movies={this.state.movies}
                                     deleteMovie={this.deleteMovie}
+                                />);
+                        } else {
+                            return <Home />
+                        }
+                    }}
+                />
+                <Route
+                    exact
+                    path="/moives/:movieId(\d+)/rank"
+                    render={(props) => {
+                        if (Auth0Client.isAuthenticated()) {
+                            return (
+                                <SeenitRank
+                                    {...props}
+                                    movies={this.state.movies}
+                                    editMovie={this.editMovie}
                                 />);
                         } else {
                             return <Home />
