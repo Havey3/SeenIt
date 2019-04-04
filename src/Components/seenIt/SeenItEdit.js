@@ -65,6 +65,7 @@ export default class SeenItEdit extends Component {
                     <div className="form-group">
                         <label htmlFor="exampleFormControlSelect1">Edit Rank</label>
                         <select className="form-control" onChange={this.handleFieldChange} id="movieRank" value={this.state.movieRank}>
+                            <option value="" disabled selceted>Choose a rank</option>
                             <option id="movieRank">1</option>
                             <option id="movieRank">2</option>
                             <option id="movieRank">3</option>
@@ -87,5 +88,6 @@ export default class SeenItEdit extends Component {
             </React.Fragment>
         )
     }
+    // value={this.state.movieRank}
 
 }

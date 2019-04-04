@@ -82,7 +82,9 @@ export default class ApplicationViews extends Component {
 
                 <Route exact path="/seenIt" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
-                        return <SeenIt {...props} movies={this.state.movies} />
+                        return <SeenIt {...props}
+                        movies={this.state.movies}
+                        editMovie={this.editMovie} />
                     } else {
                         return <Home />
                     }
@@ -146,6 +148,7 @@ export default class ApplicationViews extends Component {
                                 <SeenItDetails
                                     {...props}
                                     movies={this.state.movies}
+                                    editMovie={this.editMovie}
                                 />);
                         } else {
                             return <Home />
@@ -190,7 +193,8 @@ export default class ApplicationViews extends Component {
                     render={props => {
                         if (Auth0Client.isAuthenticated()) {
                             return <SeenItAll {...props}
-                            movies={this.state.movies} />;
+                            movies={this.state.movies}
+                            editMovie={this.editMovie} />;
                         } else {
                             return <Home />
                         }
