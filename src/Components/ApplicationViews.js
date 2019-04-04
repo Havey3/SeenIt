@@ -12,6 +12,7 @@ import SeeItEdit from "./seeIt/MovieEditForm"
 import Home from "./Home/Home"
 import SeenItDetails from "./seenIt/SeenItDetails"
 import SeenitRank from "./seenIt/seenitrank"
+import SeenItEdit from "./seenIt/SeenItEdit"
 
 export default class ApplicationViews extends Component {
     state = {
@@ -164,6 +165,19 @@ export default class ApplicationViews extends Component {
                     }}
                 />
                 <Route
+                    path="/seenIt/:movieId(\d+)/edit"
+                    render={props => {
+                        return (
+                            <SeenItEdit
+                                {...props}
+                                movies={this.state.movies}
+                                editMovie={this.editMovie}
+                            />
+                        );
+                    }}
+                />
+
+                <Route
                     exact
                     path="/seeIt/new"
                     render={(props) => {
@@ -175,7 +189,8 @@ export default class ApplicationViews extends Component {
                     path="/SeenIt-All"
                     render={props => {
                         if (Auth0Client.isAuthenticated()) {
-                            return <SeenItAll {...props} seenItAll={this.state.seenItAll} />;
+                            return <SeenItAll {...props}
+                            movies={this.state.movies} />;
                         } else {
                             return <Home />
                         }

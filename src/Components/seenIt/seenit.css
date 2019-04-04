@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #97aabd;
+    /* opacity: 0.8; */
 }
 .fa-plus-circle{
     font-size: 3rem;
@@ -82,4 +83,16 @@
 .card-attempt {
     display: flex;
     justify-content: center;
+}
+.view-all-link {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #97AABD;
+}
+.seenit-header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #97AABD;
 }
