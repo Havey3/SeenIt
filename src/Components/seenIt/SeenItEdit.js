@@ -48,7 +48,6 @@ export default class SeenItEdit extends Component {
                 movieImg: movie.image,
                 movieNotes: movie.notes,
                 movieRank: movie.rank,
-                seenIt: false,
                 id: this.props.match.params.movieId
             })
         })

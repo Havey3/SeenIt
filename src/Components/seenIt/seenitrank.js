@@ -33,6 +33,7 @@ export default class SeenitRank extends Component {
             seenIt: true,
             userId: sessionStorage.getItem('credentials')
         }
+        window.scrollTo(0, 0);
         // directs user back to 'seeIt page'/loads movies
         this.props.editMovie(editMovie)
             .then(() => this.props.history.push("/seenIt"));
@@ -46,7 +47,6 @@ export default class SeenitRank extends Component {
                 movieImg: movie.image,
                 movieNotes: movie.notes,
                 movieRank: movie.rank,
-                seenIt: false,
                 id: this.props.match.params.movieId
             })
         })

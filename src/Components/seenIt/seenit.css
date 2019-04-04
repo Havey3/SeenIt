@@ -84,3 +84,15 @@
     display: flex;
     justify-content: center;
 }
+.view-all-link {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #97AABD;
+}
+.seenit-header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #97AABD;
+}

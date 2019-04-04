@@ -164,7 +164,6 @@ export default class ApplicationViews extends Component {
                         );
                     }}
                 />
-                {/* asdasd */}
                 <Route
                     path="/seenIt/:movieId(\d+)/edit"
                     render={props => {
@@ -190,7 +189,8 @@ export default class ApplicationViews extends Component {
                     path="/SeenIt-All"
                     render={props => {
                         if (Auth0Client.isAuthenticated()) {
-                            return <SeenItAll {...props} seenItAll={this.state.seenItAll} />;
+                            return <SeenItAll {...props}
+                            movies={this.state.movies} />;
                         } else {
                             return <Home />
                         }
