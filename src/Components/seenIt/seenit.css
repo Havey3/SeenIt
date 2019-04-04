@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #97aabd;
+    /* opacity: 0.8; */
 }
 .fa-plus-circle{
     font-size: 3rem;

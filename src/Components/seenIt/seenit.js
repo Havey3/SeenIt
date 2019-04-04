@@ -3,11 +3,13 @@ import { Link } from "react-router-dom"
 import "./seenit.css"
 export default class SeenIt extends Component {
     render() {
-        this.props.movies.sort((a, b) => b.rank - a.rank)
+        const movieArray = this.props.movies.sort((a, b) => b.rank - a.rank).slice(0, 10)
+
         return (
             <React.Fragment>
                     <section className="seeIt">
-                        {this.props.movies.map(movie => {
+                        {movieArray.map(movie => {
+                            console.log(movie.length)
                             if (movie.seenIt === true && movie.userId === sessionStorage.getItem('credentials')) {
                                 return (
                                 <div key={movie.id} className="card">

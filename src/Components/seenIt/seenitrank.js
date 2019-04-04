@@ -65,6 +65,7 @@ export default class SeenitRank extends Component {
 
                         <label htmlFor="exampleFormControlSelect1">Rank The Movie</label>
                         <select className="form-control" onChange={this.handleFieldChange} id="movieRank" value={this.state.movieRank} required>
+                            <option value = "" disabled selceted>Choose a rank</option>
                             <option id="movieRank">1</option>
                             <option id="movieRank">2</option>
                             <option id="movieRank">3</option>

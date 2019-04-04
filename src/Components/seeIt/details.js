@@ -15,8 +15,6 @@ export default class SeeItDetails extends Component {
                         <div className="card-body">
                           <p className="card-text">{movie.title}</p>
                           <p className="card-text">{movie.director}</p>
-                          <p className="card-text">{movie.notes}</p>
-                          <p className="card-text">{movie.rank}</p>
                           <div className="detial-buttons">
                           <button href="#"
                             onClick={() => this.props.deleteMovie(movie.id)
