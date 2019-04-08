@@ -67,7 +67,6 @@ export default class ApplicationViews extends Component {
     }
 
 
-
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
     render() {
@@ -82,7 +81,12 @@ export default class ApplicationViews extends Component {
 
                 <Route exact path="/seenIt" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
-                        return <SeenIt {...props} movies={this.state.movies} />
+                        return <SeenIt {...props}
+                            movies={this.state.movies}
+                            editMovie={this.editMovie}
+                            seenIt={this.seenIt}
+                        />
+
                     } else {
                         return <Home />
                     }
@@ -146,6 +150,7 @@ export default class ApplicationViews extends Component {
                                 <SeenItDetails
                                     {...props}
                                     movies={this.state.movies}
+                                    editMovie={this.editMovie}
                                 />);
                         } else {
                             return <Home />
@@ -184,13 +189,16 @@ export default class ApplicationViews extends Component {
                         return <SeeItForm {...props} addMovie={this.addMovie} movies={this.state.movies} />;
                     }}
                 />
+
                 <Route
                     exact
                     path="/SeenIt-All"
                     render={props => {
                         if (Auth0Client.isAuthenticated()) {
                             return <SeenItAll {...props}
-                            movies={this.state.movies} />;
+                                movies={this.state.movies}
+                                editMovie={this.editMovie}
+                                seenIt={this.seenIt} />;
                         } else {
                             return <Home />
                         }
