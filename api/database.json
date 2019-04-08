@@ -437,6 +437,15 @@
       "seenIt": false,
       "userId": "6",
       "id": 50
+    },
+    {
+      "id": 51,
+      "title": "test movie",
+      "director": "test director ",
+      "image": "test img",
+      "rank": "1",
+      "seenIt": true,
+      "userId": "2"
     }
   ],
   "genre": []
