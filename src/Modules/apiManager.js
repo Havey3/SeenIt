@@ -3,6 +3,9 @@ export default {
     getAll: () => {
         return fetch(`${movieHost}/movies`).then(e => e.json())
     },
+    getAllGenre: () => {
+        return fetch(`http://localhost:5002/genre`).then(e => e.json())
+    },
     postMovie: (newMovie) => {
         return fetch(`${movieHost}/movies`, {
             method: "POST",

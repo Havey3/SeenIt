@@ -18,7 +18,6 @@ export default class ApplicationViews extends Component {
     state = {
         movies: []
     }
-
     addMovie = (movieObject) => {
         return apiManager.postMovie(movieObject)
             .then(() => apiManager.getAll())
@@ -78,6 +77,13 @@ export default class ApplicationViews extends Component {
                             <Callback {...props} runOnLogin={this.runOnLogin} />
                         )
                     }} />
+
+                    <Route exact path="/"
+                    render={(props) => {
+                        return (
+                            <Home />
+                        )
+                    }}/>
 
                 <Route exact path="/seenIt" render={(props) => {
                     if (Auth0Client.isAuthenticated()) {
@@ -186,7 +192,8 @@ export default class ApplicationViews extends Component {
                     exact
                     path="/seeIt/new"
                     render={(props) => {
-                        return <SeeItForm {...props} addMovie={this.addMovie} movies={this.state.movies} />;
+                        return <SeeItForm {...props} addMovie={this.addMovie} movies={this.state.movies}
+                        />;
                     }}
                 />
 

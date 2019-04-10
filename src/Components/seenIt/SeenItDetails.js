@@ -22,6 +22,7 @@ export default class SeenItDetails extends Component {
                                             this.props.history.push(`/seenIt/${movie.id}/edit`
                                             )
                                             }}
+                                            className="myButton"
                             >Edit</button>
                             </div>
                         </div>

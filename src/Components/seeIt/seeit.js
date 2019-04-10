@@ -5,7 +5,7 @@ export default class SeeIt extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="seeIt-Container">
+                <div className="seeIt-Container dumb-margins">
                     <i className="fas fa-plus-circle"
                         onClick={() => {
                             this.props.history.push("/seeit/new");
@@ -21,15 +21,6 @@ export default class SeeIt extends Component {
                                         <p className="card-text">{movie.title}</p>
                                         <p className="card-text">{movie.director}</p>
                                         <div className="seenit-btn-attempt">
-
-                                            {/* <button
-                                                type="submit"
-                                                onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
-                                                className="btn-small btn-attempt"
-                                            >
-                                                Watched?
-
-          </button> */}
                                             {<Link className="details-link" to={`/moives/${movie.id}/rank`} onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
                                             >SeenIt?</Link>}
                                             <Link className="details-link link-attempt" to={`/movies/${movie.id}`}>Details</Link>

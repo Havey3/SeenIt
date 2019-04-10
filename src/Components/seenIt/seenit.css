@@ -96,3 +96,30 @@
     font-size: 2rem;
     color: #97AABD;
 }
+.ranked-card {
+    height: 20rem !important;
+}
+.sub-rank {
+    margin-top: 5%;
+}
+.attempt-dropdown {
+    width: 10rem;
+    /* background-color: grey;
+    border-color: grey; */
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.attempt-div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.attempt-option {
+    background-color: white;
+}
+.card {
+    border: 1px solid black;
+    border-radius: 1%;
+}
+/* prolly remove ^^  */
