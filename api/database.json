@@ -29,6 +29,11 @@
       "aud": "auth0|5ca76f5438857d115bf8107a",
       "name": "testuser",
       "id": 6
+    },
+    {
+      "aud": "auth0|5cab537a1e5d38110571ab17",
+      "name": "testing",
+      "id": 7
     }
   ],
   "movies": [
@@ -446,7 +451,177 @@
       "rank": "1",
       "seenIt": true,
       "userId": "2"
+    },
+    {
+      "id": 52,
+      "title": "Green Book",
+      "director": "Peter Farrelly",
+      "image": "https://movies.universalpictures.com/media/mobile-banner-5b7e07e599633-1.gif",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "4"
+    },
+    {
+      "id": 53,
+      "title": "The Shape of Water",
+      "director": "Guillermo del Toro",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41Iogs-q4%2BL.jpg",
+      "rank": "5",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "6"
+    },
+    {
+      "id": 54,
+      "title": "Moonlightt",
+      "director": "Barry Jenkins",
+      "image": "https://www.movieposters4u.com/images/m/MoonlightNL.jpg",
+      "rank": "4",
+      "seenIt": true,
+      "userId": "7"
+    },
+    {
+      "id": 55,
+      "title": "Sinister",
+      "director": "Scott Derrickson",
+      "image": "https://i.ebayimg.com/images/g/0gEAAOSwUn9aRxP-/s-l300.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "5"
+    },
+    {
+      "id": 56,
+      "title": "The Ritual",
+      "director": "David Bruckner",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81569jK6o7L._SY445_.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "5"
+    },
+    {
+      "id": 57,
+      "title": "Alien",
+      "director": "Ridley Scott",
+      "image": "https://imgc.allpostersimages.com/img/print/u-g-F4S8OE0.jpg?w=304&h=450",
+      "rank": "4",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": ""
+    },
+    {
+      "id": 58,
+      "title": "Aquaman",
+      "director": "James Wan",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71y%2BE9MaURL._SY606_.jpg",
+      "rank": "1",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "1"
+    },
+    {
+      "id": 59,
+      "title": "Avatar",
+      "director": "James Cameron",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41kTVLeW1CL.jpg",
+      "rank": "1",
+      "seenIt": true,
+      "userId": "7"
+    },
+    {
+      "id": 60,
+      "title": "White Chicks",
+      "director": "Keenen Ivory Wayans",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61lkC9z0cjL.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "3"
+    },
+    {
+      "id": 61,
+      "title": "The Hangover",
+      "director": "Todd Phillips",
+      "image": "https://m.media-amazon.com/images/M/MV5BNGQwZjg5YmYtY2VkNC00NzliLTljYTctNzI5NmU3MjE2ODQzXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "3"
+    },
+    {
+      "title": "Matrix",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "image": "https://imgc.allpostersimages.com/img/print/u-g-F4S5W20.jpg?w=304&h=450",
+      "rank": "",
+      "seenIt": false,
+      "userId": "7",
+      "genreId": "1",
+      "id": 62
+    },
+    {
+      "id": 63,
+      "title": "The Lord of The Rings",
+      "director": "Peter Jackson",
+      "image": "https://imgc.allpostersimages.com/img/print/u-g-F7P1ER0.jpg?w=400&h=274",
+      "rank": "5",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "2"
+    },
+    {
+      "id": 64,
+      "title": "Step Brothers",
+      "director": "Adam McKay",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/611YjrsXjrL._SY445_.jpg",
+      "rank": "1",
+      "seenIt": true,
+      "userId": "7"
+    },
+    {
+      "id": 65,
+      "title": "Jurassic Park",
+      "director": "Steven Spielberg",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41P-6BnVLbL.jpg",
+      "rank": "4",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "2"
     }
   ],
-  "genre": []
+  "genre": [
+    {
+      "genre": "Action",
+      "id": 1
+    },
+    {
+      "genre": "Adventure",
+      "id": 2
+    },
+    {
+      "genre": "Comedy",
+      "id": 3
+    },
+    {
+      "genre": "Drama",
+      "id": 4
+    },
+    {
+      "genre": "Horror",
+      "id": 5
+    },
+    {
+      "genre": "Romance",
+      "id": 6
+    },
+    {
+      "genre": "Science Fiction",
+      "id": 7
+    },
+    {
+      "genre": "Thriller",
+      "id": 8
+    }
+  ]
 }

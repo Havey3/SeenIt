@@ -11,7 +11,8 @@ export default class SeenitRank extends Component {
         movieNotes: '',
         movieRank: '',
         seenIt: '',
-        userId: ''
+        userId: '',
+        genreId: ''
     }
 
     handleFieldChange = evt => {
@@ -23,6 +24,9 @@ export default class SeenitRank extends Component {
     editMovie = evt => {
         evt.preventDefault();
         // Populate database
+        if(this.state.movieRank === "") {
+            window.alert("Please Rank the Film")
+        }else{
         const editMovie = {
             id: this.props.match.params.movieId,
             title: this.state.movieTitle,
@@ -31,13 +35,14 @@ export default class SeenitRank extends Component {
             notes: this.state.movieNotes,
             rank: this.state.movieRank,
             seenIt: true,
-            userId: sessionStorage.getItem('credentials')
+            userId: sessionStorage.getItem('credentials'),
+            genreId: this.state.genreId,
         }
         window.scrollTo(0, 0);
         // directs user back to 'seeIt page'/loads movies
         this.props.editMovie(editMovie)
             .then(() => this.props.history.push("/seenIt"));
-    }
+    }}
 
     componentDidMount() {
         apiManager.singleMovie(this.props.match.params.movieId).then(movie => {
@@ -47,6 +52,7 @@ export default class SeenitRank extends Component {
                 movieImg: movie.image,
                 movieNotes: movie.notes,
                 movieRank: movie.rank,
+                genreId: movie.genreId,
                 id: this.props.match.params.movieId
             })
         })
@@ -59,12 +65,12 @@ export default class SeenitRank extends Component {
                     <section className="seeIt">
                     <div key = {movie.id} className="card">
                     <img src={movie.image} className="card-img-top" alt="..."></img>
-                    <div className="card-body">
+                    <div className="card-body ranked-card">
                         <p className="card-text">{movie.title}</p>
                         <p className="card-text">{movie.director}</p>
 
                         <label htmlFor="exampleFormControlSelect1">Rank The Movie</label>
-                        <select className="form-control" onChange={this.handleFieldChange} id="movieRank" value={this.state.movieRank} required>
+                        <select required className="form-control" onChange={this.handleFieldChange} id="movieRank" value={this.state.movieRank}>
                             <option value = "" disabled selceted>Choose a rank</option>
                             <option id="movieRank">1</option>
                             <option id="movieRank">2</option>
@@ -78,7 +84,7 @@ export default class SeenitRank extends Component {
                     <button
                         type="submit"
                         onClick={this.editMovie}
-                        className="btn btn-primary"
+                        className="btn btn-primary sub-rank"
                     >
                         Submit
           </button>
