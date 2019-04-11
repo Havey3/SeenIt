@@ -176,16 +176,6 @@
       "seenIt": true,
       "userId": "7",
       "genreId": "4"
-    },
-    {
-      "title": "Midsommar",
-      "director": "Ari Aster",
-      "image": "http://cdn.collider.com/wp-content/uploads/2019/02/midsommar-poster.jpg",
-      "seenIt": false,
-      "rank": "",
-      "userId": "7",
-      "genreId": "5",
-      "id": 67
     }
   ],
   "genre": [
