@@ -80,7 +80,7 @@ export default class SeeItForm extends Component {
                     <button
                         type="submit"
                         onClick={this.newMovie}
-                        className="btn btn-primary"
+                        className="myButton"
                     >
                         Submit
           </button>

@@ -9,7 +9,8 @@
     justify-content: center;
 }
 .nav-link {
-    color: #97AABD;
+    /* color: #97AABD; */
+    color: #fefefe;
     font-family: 'Merriweather', serif;
 }
 .login-attempt {

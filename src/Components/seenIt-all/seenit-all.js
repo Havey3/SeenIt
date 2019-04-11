@@ -50,8 +50,6 @@ export default class SeenItAll extends Component {
                                     <img src={movie.image} className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <p className="card-text">{movie.title}</p>
-                                        <p className="card-text">{movie.director}</p>
-                                        <p className="card-text">{movie.rank}/5</p>
                                         <Link className="details-link" to={`/seenitdetails/${movie.id}`}>Details</Link>
                                     </div>
                                 </div>

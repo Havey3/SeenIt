@@ -25,7 +25,7 @@ class NavBar extends Component {
                             <ul className="nav nav-pills">
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/SeeIt">
-                                        SeeIt
+                                        Coming Soon
                     </Link>
 
                                 </li>
