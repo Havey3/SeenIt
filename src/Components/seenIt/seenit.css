@@ -56,9 +56,10 @@
     justify-content: center;
     flex-direction: column;
 }
-.form-control {
+.form-control-all {
     display: flex;
     align-items: center;
+    margin: 1.8%;
 }
 .form-group {
     display: flex;
@@ -113,6 +114,7 @@
     border: 2px solid black;
     border-radius: 10px;
     text-decoration: none;
+    padding: .5%;
 }
 .attempt-div {
     display: flex;

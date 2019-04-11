@@ -74,8 +74,8 @@ export default class SeeItForm extends Component {
                             ))}
 
                         </select>
-                        <label htmlFor="exampleFormControlTextarea1">Add Notes</label>
-                        <textarea className="form-control" onChange={this.handleFieldChange} id="movieNotes" value={this.state.movieNotes} rows="3"></textarea>
+                        {/* <label htmlFor="exampleFormControlTextarea1">Add Notes</label>
+                        <textarea className="form-control" onChange={this.handleFieldChange} id="movieNotes" value={this.state.movieNotes} rows="3"></textarea> */}
                     </div>
                     <button
                         type="submit"

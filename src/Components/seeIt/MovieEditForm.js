@@ -9,7 +9,8 @@ export default class SeeItEdit extends Component {
         movieDirector: '',
         movieImg: '',
         seenIt: '',
-        userId: ''
+        userId: '',
+        movieGenre: ''
     }
 
     // This is how state gets its information
@@ -29,7 +30,8 @@ export default class SeeItEdit extends Component {
             director: this.state.movieDirector,
             image: this.state.movieImg,
             seenIt: false,
-            userId: sessionStorage.getItem('credentials')
+            userId: sessionStorage.getItem('credentials'),
+            genreId: this.state.movieGenre
         }
         // directs user back to 'seeIt page'/loads movies
         this.props.editMovie(editMovie)
@@ -45,7 +47,8 @@ export default class SeeItEdit extends Component {
                 movieNotes: movie.notes,
                 movieRank: movie.rank,
                 seenIt: false,
-                id: this.props.match.params.movieId
+                id: this.props.match.params.movieId,
+                movieGenre: movie.genreId
             })
         })
     }

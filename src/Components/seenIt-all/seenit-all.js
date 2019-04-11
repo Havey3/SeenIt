@@ -29,7 +29,7 @@ export default class SeenItAll extends Component {
         return (
             <React.Fragment>
                 <div className="attempt-div">
-                <select className="form-control attempt-dropdown" onChange={this.filterMovies} id="genreId" defaultValue=''>
+                <select className="form-control-all attempt-dropdown" onChange={this.filterMovies} id="genreId" defaultValue=''>
                 <option value="0">View All</option>
                     {this.state.genre.map(singleGenre => {
                         // if(this.state.genre.id === this.props.movies.genreId) {
