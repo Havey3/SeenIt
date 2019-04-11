@@ -1,6 +1,7 @@
 .card {
     width: 18rem !important;
-    background-color: #644e5b
+    background-color: #644e5b;
+    margin: 1%;
 }
 .seeIt-Container {
     margin: 1.5rem;
@@ -14,12 +15,17 @@
     height: 30vw;
     width: 100%;
 }
-.card-body{
+/* .card-body{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #97aabd;
-    height: 9rem;
+    height: 7rem;
+} */
+.card-body {
+    /* background-color: #CAFAFE; */
+    /* background-color: #C2b9b0 */
+    background-color: #84ceeb;
 }
 .fa-plus-circle{
     font-size: 3rem;
@@ -34,13 +40,18 @@
     cursor: pointer;
 }
 :root, .container-div{
-    background-color: #644e5b;
+    /* background-color: #CAFAFE; */
+    /* background-color: #2e1114 */
+    /* background-color: #0b0c10 */
+    /* background-color: #e3afbc */
+    /* background-color: #eae7dc; */
+    background-color: #5680e9;
 }
 .details-link {
     color: #080F5B;
 }
 .seeitform {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 1%;
     width: 50rem;
     display: flex;
@@ -59,6 +70,9 @@
 .form-control {
     display: flex;
     align-items: center;
+    border: 1px solid black;
+    margin: 1%;
+    height: 3rem;
 }
 .form-group {
     display: flex;
@@ -66,9 +80,9 @@
     justify-content: center;
     align-items: center;
 }
-#root {
+/* #root {
     background-color: #644e5b;
-}
+} */
 .detial-buttons {
     display: flex;
     flex-direction: row;
@@ -79,11 +93,18 @@
 .seenit-btn-attempt {
     display: flex;
     flex-direction: row;
-    margin: 10px 0 0;
-    padding: 5px
+    /* margin: 10px 0 0; */
+    /* padding: 5px */
 }
 p {
     margin: 0.5%;
+}
+label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn-primary {
+    font-weight: bold;
 }
 .details-link {
     margin: 10px;
@@ -115,4 +136,18 @@ p {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+.card-text {
+    font-size: 1.3rem;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+.seeit-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #97aabd;
+    height: 8rem;
+    padding: 2%;
+
 }

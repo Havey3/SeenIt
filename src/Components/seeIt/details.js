@@ -12,7 +12,7 @@ export default class SeeItDetails extends Component {
 
                         <div key = {movie.id} className="card">
                         <img src = {movie.image} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
+                        <div className="seeit-details">
                           <p className="card-text">{movie.title}</p>
                           <p className="card-text">{movie.director}</p>
                           <div className="detial-buttons">

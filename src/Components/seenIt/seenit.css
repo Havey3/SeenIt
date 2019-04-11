@@ -40,7 +40,7 @@
     color: #080F5B
 }
 .seeitform {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 1%;
     width: 50rem;
     display: flex;
@@ -56,9 +56,10 @@
     justify-content: center;
     flex-direction: column;
 }
-.form-control {
+.form-control-all {
     display: flex;
     align-items: center;
+    margin: 1.8%;
 }
 .form-group {
     display: flex;
@@ -88,13 +89,17 @@
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: #97AABD;
+    color: #fefefe;
+    font-family: 'Merriweather', serif;
 }
 .seenit-header {
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: #97AABD;
+    /* color: #97AABD; */
+    color: #fefefe;
+    font-family: 'Merriweather', serif;
+    padding: 1.8%;
 }
 .ranked-card {
     height: 20rem !important;
@@ -109,6 +114,7 @@
     border: 2px solid black;
     border-radius: 10px;
     text-decoration: none;
+    padding: .5%;
 }
 .attempt-div {
     display: flex;
@@ -122,4 +128,34 @@
     border: 1px solid black;
     border-radius: 1%;
 }
-/* prolly remove ^^  */
+.card-body-details {
+    height: 12rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #97aabd;
+}
+
+/* SEEN IT DETAILS */
+
+.card-details-attempt {
+    width: 18rem;
+    background-color: #644e5b
+}
+
+.card-img-top {
+    height: 30vw;
+    width: 100%;
+}
+.card-body-details {
+    height: 12rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #97aabd;
+}
+.card-notes {
+    font-size: 1rem;
+    color: black;
+    word-break: break-all;
+}

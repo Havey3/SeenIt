@@ -11,11 +11,11 @@ export default class SeenItDetails extends Component {
 
                         <div key = {movie.id} className="card">
                         <img src = {movie.image} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
+                        <div className="card-body-details">
                           <p className="card-text">{movie.title}</p>
                           <p className="card-text">{movie.director}</p>
-                          <p className="card-text">{movie.notes}</p>
-                          <p className="card-text">{movie.rank}</p>
+                          <p className="card-text">{movie.rank}/5</p>
+                          <p className="card-notes">{movie.notes}</p>
                           <div className="detial-buttons">
                             <button href="#"
                             onClick={() => {

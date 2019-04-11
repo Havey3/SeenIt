@@ -38,421 +38,6 @@
   ],
   "movies": [
     {
-      "id": 1,
-      "title": "Green Book",
-      "director": "Peter Farrelly",
-      "image": "https://m.media-amazon.com/images/M/MV5BNGI5OTQ5OTAtMThjNy00YTZjLTg3YmMtY2QxNWM5MTM2YzdmXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_.jpg",
-      "notes": "good",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 2,
-      "title": "The Shape of Water",
-      "director": "Guillermo del Toro",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41Iogs-q4%2BL.jpg",
-      "notes": "very good",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 3,
-      "title": "Moonlight",
-      "director": "Barry Jenkins",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.WiupNCKLsj9H7X9GsoHyPwHaFj&pid=Api",
-      "notes": "Good",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 4,
-      "title": "Spotlight",
-      "director": "Tom McCarthy",
-      "image": "https://i.pinimg.com/originals/e4/dd/d7/e4ddd7e4d527f20c5051d87dc5d8df0b.jpg",
-      "notes": "good",
-      "rank": "5",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 5,
-      "title": "Bird Man",
-      "director": "Alejandro González Iñárritu",
-      "image": "https://m.media-amazon.com/images/M/MV5BODAzNDMxMzAxOV5BMl5BanBnXkFtZTgwMDMxMjA4MjE@._V1_.jpg",
-      "notes": "Very good",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 6,
-      "title": "12 Years a Slave",
-      "director": "Steve McQueen",
-      "image": "https://i.pinimg.com/originals/ab/8e/33/ab8e33ea86263e3367feb600ec3f45e7.jpg",
-      "notes": "asd",
-      "rank": "5",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 9,
-      "title": "The King's Speech",
-      "director": "Tom Hooper",
-      "image": "https://i.pinimg.com/originals/a2/60/bb/a260bb8195a3e88ce54aca3d11452b06.jpg",
-      "notes": "okay movie",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 10,
-      "title": "The Hurt Locker",
-      "director": "Kathryn Bigelow",
-      "image": "https://m.media-amazon.com/images/M/MV5BYWYxZjU2MmQtMmMzYi00ZWUwLTg2ZWQtMDExZTVlYjM3ZWM1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
-      "notes": "decent",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 11,
-      "title": "Crash",
-      "director": "Paul Haggis",
-      "image": "https://upload.wikimedia.org/wikipedia/en/d/d0/Crash_ver2.jpg",
-      "notes": "Great",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 12,
-      "title": "The Lord of the Rings: The Return of The King",
-      "director": "Peter Jackson",
-      "image": "https://www.movieposter.com/posters/archive/main/143/MPW-71729",
-      "notes": "Best movie ever",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 13,
-      "title": "A Beautiful Mind",
-      "director": "Ron Howard",
-      "image": "https://img.moviepostershop.com/a-beautiful-mind-movie-poster-2001-1010297232.jpg",
-      "notes": "very good",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 14,
-      "title": "Gladiator",
-      "director": "Ridley Scott",
-      "image": "https://i.ebayimg.com/images/g/nA4AAOxy~dNQ9XbZ/s-l300.jpg",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 15,
-      "title": "American Beauty",
-      "director": "Sam Mendes",
-      "image": "https://i.pinimg.com/originals/5e/d5/39/5ed53986438e06a876c1e581df398ecc.png",
-      "notes": "Very good",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 16,
-      "title": "The Lion King",
-      "director": "someone",
-      "image": "https://i.pinimg.com/originals/40/a5/cd/40a5cd63ff456602357c1ac2e7750f38.png",
-      "notes": "want to see the musical",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 17,
-      "title": "the jungle book",
-      "director": "someone",
-      "image": "https://m.media-amazon.com/images/M/MV5BODZjN2E2NDctOWZlMy00MGE0LWFlMmMtYWY0Mzc1NDA2N2VkXkEyXkFqcGdeQXVyNDUzNzExOTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
-      "notes": "great",
-      "rank": "5",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 20,
-      "title": "Movie 1",
-      "director": "director",
-      "image": "img",
-      "notes": "Very good movie",
-      "rank": "3",
-      "userId": "3"
-    },
-    {
-      "id": 21,
-      "title": "movie",
-      "director": "moiasd",
-      "image": "aasd",
-      "rank": "",
-      "userId": "3"
-    },
-    {
-      "id": 22,
-      "title": "mvoei title",
-      "director": "asdadsad",
-      "image": "asdadasda",
-      "notes": "asdads",
-      "rank": "",
-      "seenIt": false,
-      "userId": "3"
-    },
-    {
-      "id": 23,
-      "title": "asdd movie",
-      "director": "movie movie",
-      "image": "movie",
-      "notes": "asdasd",
-      "rank": "",
-      "seenIt": false,
-      "userId": "3"
-    },
-    {
-      "id": 25,
-      "title": "newasdad",
-      "director": "newasdasd",
-      "image": "asdasdad",
-      "notes": "decent",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
-      "id": 26,
-      "title": "another movie",
-      "director": "another director ",
-      "image": "another image",
-      "notes": "great",
-      "rank": "2",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 27,
-      "title": "pome more",
-      "director": "monea asda",
-      "image": "asdadad",
-      "notes": "greattttt",
-      "rank": "5",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 28,
-      "title": "alksdj",
-      "director": "jaslkjdd",
-      "image": "lkjasdlad",
-      "rank": "2",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 29,
-      "title": "akljsdlakjd",
-      "director": "aldjksalkdj",
-      "image": "adslkjdaljda",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 30,
-      "title": "aslkjdakldsjlkj",
-      "director": "aljksdlakjdalkdj",
-      "image": "asldjaldkjalkdja",
-      "notes": "asdasd",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 31,
-      "title": "alsjdlkadjslkdj",
-      "director": "lajsdlkjadkljald",
-      "image": "ljkasdjlkajdad",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 32,
-      "title": "aksjdklajdlkajdlkj",
-      "director": "lasjdlkadjlakdjlk",
-      "image": "jlkjslakjdlkajdljad",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 33,
-      "title": "alsjdklajsdlkasjdlk",
-      "director": "jlajsdljadkljadlkj",
-      "image": "alsdjlkajdlkadjla",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 34,
-      "title": "ajsdlkajdslkj",
-      "director": "aljalskjdlkj",
-      "image": "alskjdalkdja",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 35,
-      "title": "aklsdjkladjkl",
-      "director": "jklajsdlkjkl",
-      "image": "jlajklasj",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "5"
-    },
-    {
-      "id": 36,
-      "title": "Green Book",
-      "director": "Peter Farrelly",
-      "image": "https://m.media-amazon.com/images/M/MV5BNGI5OTQ5OTAtMThjNy00YTZjLTg3YmMtY2QxNWM5MTM2YzdmXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_.jpg",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 37,
-      "title": "The Shape of Water",
-      "director": "Guillermo del Toro",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41Iogs-q4%2BL.jpg",
-      "rank": "2",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 38,
-      "title": "Moonlight",
-      "director": "Barry Jenkins",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.WiupNCKLsj9H7X9GsoHyPwHaFj&pid=Api",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 39,
-      "title": "Birdman",
-      "director": "Alejandro González Iñárritu",
-      "image": "https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/1/no604-my-birdman-minimal-movie-poster-chungkong-art.jpg?&targetx=0&targety=0&imagewidth=500&imageheight=700&modelwidth=500&modelheight=700&backgroundcolor=FFFFFF&orientation=1",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 40,
-      "title": "12 Years a Slave",
-      "director": "Steve McQueen",
-      "image": "https://i.pinimg.com/originals/ab/8e/33/ab8e33ea86263e3367feb600ec3f45e7.jpg",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 41,
-      "title": "Argo",
-      "director": "Ben Affleck",
-      "image": "http://screeninvasion.com/wp-content/uploads/2013/02/midnight-marauder-oscars-argo-academy-awards-nordstrom-620x878-388x550.jpg",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 42,
-      "title": "The Artist",
-      "director": "Michel Hazanavicius",
-      "image": "https://m.media-amazon.com/images/M/MV5BMDUyZWU5N2UtOWFlMy00MTI0LTk0ZDYtMzFhNjljODBhZDA5XkEyXkFqcGdeQXVyNzA4ODc3ODU@._V1_UY268_CR3,0,182,268_AL_.jpg",
-      "rank": "5",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 43,
-      "title": "The King's Speech",
-      "director": "Tom Hooper",
-      "image": "https://cdn.cinematerial.com/p/500x/i8pc5f5x/the-kings-speech-german-movie-poster.jpg",
-      "rank": "5",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 44,
-      "title": "The GodFather",
-      "director": "Francis Ford Coppola",
-      "image": "https://i.pinimg.com/originals/40/b4/21/40b421c7cfe1b3059d5e50d79e968270.jpg",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 45,
-      "title": "The GodFather 2",
-      "director": "Francis Ford Coppola",
-      "image": "https://i.pinimg.com/originals/f3/f1/0d/f3f10d94f6c0c0b2a344167065664530.jpg",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 48,
-      "title": "Whiplash",
-      "director": "Damien Chazelle",
-      "image": "https://posterspy.com/wp-content/uploads/2015/01/WHIPLASHv4.png",
-      "rank": "3",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "id": 49,
-      "title": "Hereditary",
-      "director": "Ari Aster",
-      "image": "https://pbs.twimg.com/media/DjWjRz0XsAAtEgs.jpg",
-      "notes": "asd",
-      "rank": "4",
-      "seenIt": true,
-      "userId": "6"
-    },
-    {
-      "title": "new movie",
-      "director": "new movie",
-      "image": "new movie",
-      "seenIt": false,
-      "userId": "6",
-      "id": 50
-    },
-    {
-      "id": 51,
-      "title": "test movie",
-      "director": "test director ",
-      "image": "test img",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "2"
-    },
-    {
       "id": 52,
       "title": "Green Book",
       "director": "Peter Farrelly",
@@ -467,6 +52,7 @@
       "title": "The Shape of Water",
       "director": "Guillermo del Toro",
       "image": "https://images-na.ssl-images-amazon.com/images/I/41Iogs-q4%2BL.jpg",
+      "notes": "adadsad",
       "rank": "5",
       "seenIt": true,
       "userId": "7",
@@ -477,6 +63,7 @@
       "title": "Moonlightt",
       "director": "Barry Jenkins",
       "image": "https://www.movieposters4u.com/images/m/MoonlightNL.jpg",
+      "notes": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "rank": "4",
       "seenIt": true,
       "userId": "7"
@@ -551,16 +138,6 @@
       "genreId": "3"
     },
     {
-      "title": "Matrix",
-      "director": "Lana Wachowski, Lilly Wachowski",
-      "image": "https://imgc.allpostersimages.com/img/print/u-g-F4S5W20.jpg?w=304&h=450",
-      "rank": "",
-      "seenIt": false,
-      "userId": "7",
-      "genreId": "1",
-      "id": 62
-    },
-    {
       "id": 63,
       "title": "The Lord of The Rings",
       "director": "Peter Jackson",
@@ -588,6 +165,27 @@
       "seenIt": true,
       "userId": "7",
       "genreId": "2"
+    },
+    {
+      "id": 66,
+      "title": "Whiplash",
+      "director": "Damien Chazelle",
+      "image": "https://i.pinimg.com/originals/13/38/7b/13387b189da77d448e2e8b73bef3e9bb.jpg",
+      "notes": "",
+      "rank": "5",
+      "seenIt": true,
+      "userId": "7",
+      "genreId": "4"
+    },
+    {
+      "title": "Midsommar",
+      "director": "Ari Aster",
+      "image": "http://cdn.collider.com/wp-content/uploads/2019/02/midsommar-poster.jpg",
+      "seenIt": false,
+      "rank": "",
+      "userId": "7",
+      "genreId": "5",
+      "id": 67
     }
   ],
   "genre": [

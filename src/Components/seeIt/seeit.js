@@ -19,7 +19,6 @@ export default class SeeIt extends Component {
                                     <img src={movie.image} className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <p className="card-text">{movie.title}</p>
-                                        <p className="card-text">{movie.director}</p>
                                         <div className="seenit-btn-attempt">
                                             {<Link className="details-link" to={`/moives/${movie.id}/rank`} onClick={() => this.props.seenIt({ seenIt: true }, movie.id)}
                                             >SeenIt?</Link>}
