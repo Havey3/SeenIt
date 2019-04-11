@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import "./seeit.css"
+import reel from "./seenit_reel_black_04.png"
 export default class SeeIt extends Component {
     render() {
         return (
             <React.Fragment>
                 <div className="seeIt-Container dumb-margins">
-                    <i className="fas fa-plus-circle"
+                    <div className="logo-attempt2">
+                        {/* <i className="fas fa-plus-circle"
                         onClick={() => {
                             this.props.history.push("/seeit/new");
-                        }}></i>
+                        }}></i> */}
+                        <img className="logo-img" src={reel} alt="hi" onClick={() => {
+                            this.props.history.push("/seeit/new");
+                        }}></img>
+                    </div>
+
 
 
                     <section className="seeIt">

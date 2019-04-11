@@ -151,3 +151,16 @@ label{
     padding: 2%;
 
 }
+.logo-img {
+    height: 6rem !important;
+    width: 6rem !important;
+    margin: -20px;
+}
+.logo-attempt2 {
+    display: flex;
+    justify-content: center !important;
+}
+.logo-attempt2 :hover {
+    cursor: pointer;
+    opacity: .5;
+}
