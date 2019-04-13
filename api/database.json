@@ -1,181 +1,527 @@
 {
   "users": [
     {
-      "aud": "auth0|5c9e31a9587afe10304e4a4f",
-      "name": "test",
+      "aud": "auth0|5cafda618386f61047314f2e",
+      "name": "jdhavey3",
       "id": 1
-    },
-    {
-      "aud": "auth0|5c9e33e43afc441036672e07",
-      "name": "josh",
-      "id": 2
-    },
-    {
-      "aud": "auth0|5ca3750b839d9f109ad0d100",
-      "name": "d",
-      "id": 3
-    },
-    {
-      "aud": "auth0|5ca51f1f2a49f010fdc35492",
-      "name": "raeanne",
-      "id": 4
-    },
-    {
-      "aud": "auth0|5ca653447ca2e7111689e2f6",
-      "name": "kim",
-      "id": 5
-    },
-    {
-      "aud": "auth0|5ca76f5438857d115bf8107a",
-      "name": "testuser",
-      "id": 6
     },
     {
       "aud": "auth0|5cab537a1e5d38110571ab17",
       "name": "testing",
-      "id": 7
+      "id": 2
     }
   ],
   "movies": [
     {
-      "id": 52,
-      "title": "Green Book",
-      "director": "Peter Farrelly",
-      "image": "https://movies.universalpictures.com/media/mobile-banner-5b7e07e599633-1.gif",
-      "rank": "3",
+      "id": 1,
+      "title": "Whiplash",
+      "director": "Damien Chazelle",
+      "image": "http://www.gigareel.com/wp-content/uploads/2016/01/whiplash-movie-poster-6.jpg",
+      "notes": "AmaZiNg",
+      "rank": "5",
       "seenIt": true,
-      "userId": "7",
+      "userId": "1",
       "genreId": "4"
     },
     {
-      "id": 53,
-      "title": "The Shape of Water",
-      "director": "Guillermo del Toro",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41Iogs-q4%2BL.jpg",
-      "notes": "adadsad",
+      "id": 2,
+      "title": "Shutter Island",
+      "director": "Martin Scorsese",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51MsI8xR-NL.jpg",
       "rank": "5",
       "seenIt": true,
-      "userId": "7",
-      "genreId": "6"
+      "userId": "1",
+      "genreId": "8"
     },
     {
-      "id": 54,
-      "title": "Moonlightt",
-      "director": "Barry Jenkins",
-      "image": "https://www.movieposters4u.com/images/m/MoonlightNL.jpg",
-      "notes": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "rank": "4",
+      "id": 3,
+      "title": "The Godfather",
+      "director": "Francis Ford Coppola",
+      "image": "https://s3.amazonaws.com/moviemonitor/images/movies/original/19713.jpg?1354330880",
+      "rank": "5",
       "seenIt": true,
-      "userId": "7"
+      "userId": "1",
+      "genreId": "4"
     },
     {
-      "id": 55,
-      "title": "Sinister",
-      "director": "Scott Derrickson",
-      "image": "https://i.ebayimg.com/images/g/0gEAAOSwUn9aRxP-/s-l300.jpg",
-      "rank": "2",
-      "seenIt": true,
-      "userId": "7",
-      "genreId": "5"
-    },
-    {
-      "id": 56,
+      "id": 4,
       "title": "The Ritual",
       "director": "David Bruckner",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/81569jK6o7L._SY445_.jpg",
-      "rank": "3",
+      "image": "https://i.pinimg.com/originals/ed/9a/82/ed9a823ac6cc69d00498c40f065179fb.jpg",
+      "rank": "5",
       "seenIt": true,
-      "userId": "7",
+      "userId": "1",
       "genreId": "5"
     },
     {
-      "id": 57,
-      "title": "Alien",
-      "director": "Ridley Scott",
-      "image": "https://imgc.allpostersimages.com/img/print/u-g-F4S8OE0.jpg?w=304&h=450",
-      "rank": "4",
+      "id": 5,
+      "title": "Inglourious Basterds",
+      "director": "Quentin Tarantino",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg",
+      "rank": "5",
       "seenIt": true,
-      "userId": "7",
-      "genreId": ""
-    },
-    {
-      "id": 58,
-      "title": "Aquaman",
-      "director": "James Wan",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/71y%2BE9MaURL._SY606_.jpg",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "7",
+      "userId": "1",
       "genreId": "1"
     },
     {
-      "id": 59,
-      "title": "Avatar",
-      "director": "James Cameron",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41kTVLeW1CL.jpg",
-      "rank": "1",
-      "seenIt": true,
-      "userId": "7"
-    },
-    {
-      "id": 60,
-      "title": "White Chicks",
-      "director": "Keenen Ivory Wayans",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/61lkC9z0cjL.jpg",
+      "id": 6,
+      "title": "The Hateful Eight",
+      "director": "Quentin Tarantino",
+      "image": "https://mobithailand.files.wordpress.com/2016/03/the-hateful-eight-uk-poster-834x1024.jpg?w=834",
       "rank": "3",
       "seenIt": true,
-      "userId": "7",
-      "genreId": "3"
+      "userId": "1",
+      "genreId": "8"
     },
     {
-      "id": 61,
-      "title": "The Hangover",
-      "director": "Todd Phillips",
-      "image": "https://m.media-amazon.com/images/M/MV5BNGQwZjg5YmYtY2VkNC00NzliLTljYTctNzI5NmU3MjE2ODQzXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
-      "rank": "2",
+      "id": 7,
+      "title": "Django Unchained",
+      "director": "Quentin Tarantino",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51dNfU53lNL.jpg",
+      "rank": "3",
       "seenIt": true,
-      "userId": "7",
-      "genreId": "3"
+      "userId": "1",
+      "genreId": "1"
     },
     {
-      "id": 63,
-      "title": "The Lord of The Rings",
-      "director": "Peter Jackson",
-      "image": "https://imgc.allpostersimages.com/img/print/u-g-F7P1ER0.jpg?w=400&h=274",
-      "rank": "5",
+      "id": 8,
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "image": "https://i.ebayimg.com/images/i/132250196349-0-1/s-l1000.jpg",
+      "rank": "3",
       "seenIt": true,
-      "userId": "7",
-      "genreId": "2"
+      "userId": "1",
+      "genreId": "4"
     },
     {
-      "id": 64,
-      "title": "Step Brothers",
-      "director": "Adam McKay",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/611YjrsXjrL._SY445_.jpg",
-      "rank": "1",
+      "id": 9,
+      "title": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81AJdOIEIhL._SY679_.jpg",
+      "rank": "3",
       "seenIt": true,
-      "userId": "7"
+      "userId": "1",
+      "genreId": "1"
     },
     {
-      "id": 65,
-      "title": "Jurassic Park",
+      "id": 10,
+      "title": "Schindler's List",
       "director": "Steven Spielberg",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41P-6BnVLbL.jpg",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/517nCQA7%2B%2BL.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 11,
+      "title": "Fight Club",
+      "director": "David Fincher",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 12,
+      "title": "Forest Gump",
+      "director": "Robert Zemeckis",
+      "image": "https://cdn.shopify.com/s/files/1/1416/8662/products/forrest_gump_1994_advance_original_film_art_2000x.jpg?v=1551771842",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 13,
+      "title": "Goodfellas",
+      "director": "Martin Scorsese",
+      "image": "https://ae01.alicdn.com/kf/HTB1dWB5MpXXXXalXXXXq6xXFXXXc/hot-GOODFELLAS-CLASSIC-MOVIE-POSTER-PRINT-Fabric-silk-poster-and-printing-Home-Deco.jpg_640x640.jpg",
       "rank": "4",
       "seenIt": true,
-      "userId": "7",
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 14,
+      "title": "Seven Samurai",
+      "director": "Akira Kurosawa",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91OOTyd4ToL._SY679_.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
       "genreId": "2"
     },
     {
-      "id": 66,
-      "title": "Whiplash",
-      "director": "Damien Chazelle",
-      "image": "https://i.pinimg.com/originals/13/38/7b/13387b189da77d448e2e8b73bef3e9bb.jpg",
-      "notes": "",
+      "id": 15,
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "image": "https://www.hollywoodreporter.com/sites/default/files/custom/Blog_Images/interstellar5.jpg",
+      "rank": "4",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "2"
+    },
+    {
+      "id": 16,
+      "title": "Life Is Beautiful",
+      "director": "Roberto Benigni",
+      "image": "https://i.pinimg.com/originals/d8/dc/56/d8dc56c3c459b74c9739c0612f49cde7.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "6"
+    },
+    {
+      "id": 17,
+      "title": "Se7en",
+      "director": "David Fincher",
+      "image": "https://i.pinimg.com/originals/47/ac/71/47ac71fb010c6544f3b8465ec5ffb5aa.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 18,
+      "title": "The Silence of the Lambs",
+      "director": "Jonathan Demme",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/79e28f35757089.5702d31785370.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "8"
+    },
+    {
+      "id": 19,
+      "title": "It's a Wonderful Life",
+      "director": "Frank Capra",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/95/Its_A_Wonderful_Life_Movie_Poster.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 20,
+      "title": "The Prestige",
+      "director": "Christopher Nolan",
+      "image": "https://i.pinimg.com/originals/68/6a/db/686adb0d588374a722d6f8d7f364728b.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 21,
+      "title": "The Departed",
+      "director": "Martin Scorsese",
+      "image": "https://i.pinimg.com/originals/f2/47/75/f2477527d8e2412aa9a84cfda5e4e30f.jpg",
+      "rank": "4",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "8"
+    },
+    {
+      "id": 22,
+      "title": "The Gladiator",
+      "director": "Ridley Scott",
+      "image": "https://dtvimages.hs.llnwd.net/e1//db_photos/movies/AllPhotosAPGI/24674/24674_aa.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "1"
+    },
+    {
+      "id": 23,
+      "title": "The Lion King",
+      "director": "Roger Allers",
+      "image": "https://www.movieartarena.com/imgs/lionkingdvd.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "2"
+    },
+    {
+      "id": 24,
+      "title": "Casablanca",
+      "director": "Michael Curtiz",
+      "image": "https://www.movieposter.com/posters/archive/main/23/MPW-11602",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "6"
+    },
+    {
+      "id": 25,
+      "title": "The Shining",
+      "director": "Stanley Kubrick",
+      "image": "http://i.ebayimg.com/00/s/NTAwWDM1Mw==/z/s0wAAOxy7nNTWITn/$_3.JPG?set_id=2",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "5"
+    },
+    {
+      "id": 26,
+      "title": "Inside Out",
+      "director": "Pete Docter",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "2"
+    },
+    {
+      "id": 27,
+      "title": "Casino",
+      "director": "Martin Scorsese",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/513wxpquZKL.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "4"
+    },
+    {
+      "id": 28,
+      "title": "Sunrise",
+      "director": "F.W. Murnau",
+      "image": "https://i.pinimg.com/originals/19/ab/83/19ab832c6a32703e8b17b04b86984aee.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "6"
+    },
+    {
+      "id": 29,
+      "title": "Logan",
+      "director": "James Mangold",
+      "image": "https://i.pinimg.com/originals/ad/64/a2/ad64a2e8914ad082d58c3a453c128b10.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "1"
+    },
+    {
+      "id": 30,
+      "title": "The Grand Budapest Hotel",
+      "director": "Wes Anderson",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/713kiC-8JhL._SY679_.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "2"
+    },
+    {
+      "id": 31,
+      "title": "Gone Girl",
+      "director": "David Fincher",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41xNMpj9IgL.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "8"
+    },
+    {
+      "id": 32,
+      "title": "Into the Wild ",
+      "director": "Sean Penn",
+      "image": "https://i.pinimg.com/originals/d9/3e/70/d93e70cca7e3303666727f0e80997f41.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "2"
+    },
+    {
+      "id": 33,
+      "title": "No Country for Old Men",
+      "director": "Ethan Coen",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "8"
+    },
+    {
+      "id": 34,
+      "title": "Donnie Darko",
+      "director": "Richard Kelly",
+      "image": "https://i.pinimg.com/originals/dc/28/c4/dc28c4a46789f1b85057c0116a72627b.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 35,
+      "title": "Hot Fuzz",
+      "director": "Edgar Wright",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51nv39wuS4L.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "3"
+    },
+    {
+      "id": 36,
+      "title": "Superbad",
+      "director": "Greg Mottola",
+      "image": "https://img.moviepostershop.com/superbad-movie-poster-2007-1020405577.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "3"
+    },
+    {
+      "id": 37,
+      "title": "Monty Python",
+      "director": "Terry Gilliam",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51NB7Q8RbUL.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "3"
+    },
+    {
+      "id": 38,
+      "title": "Step Brothers",
+      "director": "Adam Mckay",
+      "image": "https://i.pinimg.com/originals/26/c0/8a/26c08aa5720e821d09b416423799a048.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "3"
+    },
+    {
+      "id": 39,
+      "title": "The Hangover",
+      "director": "Todd Phillips",
+      "image": "https://i.pinimg.com/originals/7f/7a/71/7f7a715c84d914ebe1310d434cd73ca1.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "3"
+    },
+    {
+      "id": 40,
+      "title": "Alien",
+      "director": "Ridley Scott",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51aSwmzxmdL.jpg",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 41,
+      "title": "Ex Machina",
+      "director": "Alex Garland",
+      "image": "https://static1.squarespace.com/static/50d144f6e4b05aff8e5b9c8c/t/556808d2e4b07a367ae8c39b/1432881394412/",
       "rank": "5",
       "seenIt": true,
-      "userId": "7",
-      "genreId": "4"
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 42,
+      "title": "Arrival",
+      "director": "Denis Villeneuve",
+      "image": "https://image.tmdb.org/t/p/original/hLudzvGfpi6JlwUnsNhXwKKg4j.jpg",
+      "rank": "5",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 43,
+      "title": "Annihilation",
+      "director": "Alex Garland",
+      "image": "https://i.pinimg.com/originals/7e/4b/ca/7e4bca27828401db3594a6fbfd930c96.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 44,
+      "title": "Gravity",
+      "director": "Alfonso Cuarón",
+      "image": "https://i0.wp.com/cupofmoe.com/wp-content/uploads/2017/11/Gravity-movie-poster.jpg?fit=736%2C1049",
+      "rank": "1",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 45,
+      "title": "Hereditary",
+      "director": "Ari Aster",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTU5MDg3OGItZWQ1Ny00ZGVmLTg2YTUtMzBkYzQ1YWIwZjlhXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_.jpg",
+      "rank": "4",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "5"
+    },
+    {
+      "id": 46,
+      "title": "Get Out",
+      "director": "Jordan Peele",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "5"
+    },
+    {
+      "id": 47,
+      "title": "IT",
+      "director": "Andrés Muschietti",
+      "image": "https://i.pinimg.com/originals/56/38/56/563856fa028fcdb8c18ccd3732bda0e7.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "5"
+    },
+    {
+      "id": 48,
+      "title": "The Witch",
+      "director": "Robert Eggers",
+      "image": "https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/the-witch-poster.jpg",
+      "rank": "3",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "5"
+    },
+    {
+      "id": 49,
+      "title": "Hellboy",
+      "director": "Neil Marshall",
+      "image": "https://i.pinimg.com/originals/b9/3c/c3/b93cc30f388ef29c8eef6bc0c343ee7c.jpg",
+      "seenIt": false,
+      "userId": "1",
+      "genreId": "7"
+    },
+    {
+      "id": 51,
+      "title": "The Lion King",
+      "director": "Jon Favreau",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_.jpg",
+      "notes": "Amazing",
+      "rank": "2",
+      "seenIt": true,
+      "userId": "1",
+      "genreId": "2"
+    },
+    {
+      "id": 52,
+      "title": "Toy Story 4",
+      "director": "Josh Cooley",
+      "image": "http://cdn.collider.com/wp-content/uploads/2018/11/toy-story-4-poster1.jpg",
+      "notes": "Anazubg",
+      "seenIt": false,
+      "userId": "1",
+      "genreId": "2"
     }
   ],
   "genre": [

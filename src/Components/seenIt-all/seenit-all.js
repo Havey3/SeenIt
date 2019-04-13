@@ -24,7 +24,7 @@ export default class SeenItAll extends Component {
     }
 
     render() {
-        const moviesToRender = this.state.moviesToRender.length > 0 ? this.state.moviesToRender : this.props.movies;
+        const moviesToRender = this.state.moviesToRender.length > 0 ? this.state.moviesToRender : this.props.movies;    
 
         return (
             <React.Fragment>
