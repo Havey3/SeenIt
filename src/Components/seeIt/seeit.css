@@ -102,7 +102,7 @@ p {
     margin: 0.5%;
 }
 label{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .btn-primary {
@@ -207,4 +207,43 @@ label{
 .logo-attempt2 :hover {
     cursor: pointer;
     opacity: .5;
+}
+
+
+/* Details page change css */
+.seeIt-change-container {
+    display: flex;
+    margin: 1.5rem;
+    justify-content: space-evenly;
+}
+.card-change {
+    width: 18rem;
+    background-color: #644e5b;
+    margin: 1%;
+}
+.image-change {
+    height: 35vw;
+    width: 35vw;
+}
+.testing-padding {
+    padding-bottom: 115px;
+    margin-bottom: 115px;
+}
+.seeit-details-change {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-attempt {
+    font-size: 2.4rem;
+    font-family: 'Merriweather', serif;
+    color: black;
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
+.card-text-attempt {
+    color: black;
+    font-size: 1.5rem;
 }

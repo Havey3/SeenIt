@@ -80,3 +80,9 @@ export default auth0Client;
 // Test user
 // josh@josh.com
 // Raeanne1
+
+// Auth Config incase deleted
+// export default {
+// domain: 'dev-a8bcglrg.auth0.com',
+// clientId: 'WwW9wIhvqFR2bZRsDd9m7mHUe5P1kQi5'
+//  }

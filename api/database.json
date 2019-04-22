@@ -28,6 +28,7 @@
       "title": "Shutter Island",
       "director": "Martin Scorsese",
       "image": "https://images-na.ssl-images-amazon.com/images/I/51MsI8xR-NL.jpg",
+      "notes": "Very good",
       "rank": "5",
       "seenIt": true,
       "userId": "1",
@@ -38,6 +39,7 @@
       "title": "The Godfather",
       "director": "Francis Ford Coppola",
       "image": "https://s3.amazonaws.com/moviemonitor/images/movies/original/19713.jpg?1354330880",
+      "notes": "Amazing film",
       "rank": "5",
       "seenIt": true,
       "userId": "1",
@@ -516,7 +518,6 @@
       "title": "Toy Story 4",
       "director": "Josh Cooley",
       "image": "http://cdn.collider.com/wp-content/uploads/2018/11/toy-story-4-poster1.jpg",
-      "notes": "Anazubg",
       "seenIt": false,
       "userId": "1",
       "genreId": "2"
