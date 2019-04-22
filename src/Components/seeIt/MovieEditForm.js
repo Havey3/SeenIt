@@ -57,7 +57,7 @@ export default class SeeItEdit extends Component {
             <React.Fragment>
                 <form className="seeitform">
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlInput1">Edit Movie</label>
+                        <label htmlFor="exampleFormControlInput1" className="label-edit">Edit Movie</label>
                         <input type="text" className="form-control" onChange={this.handleFieldChange} id="movieTitle" value={this.state.movieTitle}></input>
                         <input type="text" className="form-control" onChange={this.handleFieldChange} id="movieDirector" value={this.state.movieDirector}></input>
                         <input type="img" className="form-control" onChange={this.handleFieldChange} id="movieImg" value={this.state.movieImg}></input>

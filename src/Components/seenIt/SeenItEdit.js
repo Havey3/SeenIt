@@ -60,13 +60,13 @@ export default class SeenItEdit extends Component {
             <React.Fragment>
                 <form className="seeitform">
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlInput1">Edit Movie</label>
+                        <label htmlFor="exampleFormControlInput1" className="label-edit">Edit Movie</label>
                         <input type="text" className="form-control" onChange={this.handleFieldChange} id="movieTitle" value={this.state.movieTitle}></input>
                         <input type="text" className="form-control" onChange={this.handleFieldChange} id="movieDirector" value={this.state.movieDirector}></input>
                         <input type="img" className="form-control" onChange={this.handleFieldChange} id="movieImg" value={this.state.movieImg}></input>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlSelect1">Edit Rank</label>
+                        <label htmlFor="exampleFormControlSelect1" className="label-edit">Edit Rank</label>
                         <select className="form-control" onChange={this.handleFieldChange} id="movieRank" value={this.state.movieRank}>
                             <option value="" disabled selceted>Choose a rank</option>
                             <option id="movieRank">1</option>
@@ -77,7 +77,7 @@ export default class SeenItEdit extends Component {
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlTextarea1">Edit Notes</label>
+                        <label htmlFor="exampleFormControlTextarea1" className="label-edit">Edit Notes</label>
                         <textarea className="form-control" onChange={this.handleFieldChange} id="movieNotes" value={this.state.movieNotes} rows="3"></textarea>
                     </div>
                     <button

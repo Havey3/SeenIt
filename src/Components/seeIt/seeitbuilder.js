@@ -59,12 +59,12 @@ export default class SeeItForm extends Component {
             <React.Fragment>
                 <form className="seeitform">
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlInput1">Add Movie</label>
+                        <label htmlFor="exampleFormControlInput1" className="label-edit">Add Movie</label>
                         <input type="text" className="form-control" onChange={this.handleFieldChange} id="movieTitle" placeholder="Movie Title"></input>
                         <input type="text" className="form-control" onChange={this.handleFieldChange} id="movieDirector" placeholder="Movie Director"></input>
                         <input type="img" className="form-control" onChange={this.handleFieldChange} id="movieImg" placeholder="Movie Image"></input>
 
-                        <label htmlFor="exampleFormControlSelect1">Add a Genre</label>
+                        <label htmlFor="exampleFormControlSelect1" className="label-edit">Add a Genre</label>
                         <select className="form-control" onChange={this.handleFieldChange} id="genreId" defaultValue=''
                             required>
                             <option value="" disabled>Choose a Genre</option>
