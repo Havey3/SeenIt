@@ -1,5 +1,4 @@
 <h1>SeenIt</h1>
-<hr>
 <p>SeenIt is an app where users can keep a list of their favorite movies and movies they would like to watch.</p>
 
 <p>This is my Front-End capstone for NewForce.</p>
@@ -8,9 +7,9 @@
 <ul>
 <li>HTML</li>
 <li>Css</li>
-<li>Bootstrap</li>
+<li>Bootstrap (https://getbootstrap.com/)</li>
 <li>Javascript</li>
-<li>React</li>
+<li>React (https://github.com/facebook/create-react-app)</li>
 </ul>
 
 <h1>Check out SeenIt</h1>
