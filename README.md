@@ -15,6 +15,10 @@
 <h1>Check out SeenIt</h1>
 https://seenit-application.herokuapp.com/
 
+<p>Click Sign In</p>
+<p>Create an account or sing in</p>
+<p>From there you can add movies!</p>
+
 <br>
 <p> OR </p>
 
